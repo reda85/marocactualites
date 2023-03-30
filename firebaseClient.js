@@ -1,6 +1,6 @@
-import firebaseClient from "firebase/app";
-import "firebase/auth";
-import 'firebase/storage'
+import firebaseClient from "firebase/compat/app";
+import "firebase/compat/auth";
+import 'firebase/compat/storage'
 
 
 /*
