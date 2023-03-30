@@ -8,10 +8,9 @@ export default function Vignette(props) {
             <div className='py-6 font-bold font-Lora text-black text-3xl'>
             À la une
             </div>
-            <div className='' >
-            <Image width={1200}
-    height={950}
-    objectFit="cover" src={posts[1].thumbnail} alt=""   
+            <div className='relative w-128 h-96' >
+            <Image fill
+     src={posts[0].thumbnail} alt=""   
            
            />
            </div>
@@ -21,10 +20,9 @@ export default function Vignette(props) {
 
             <div>
            
-            <div className='' >
-            <Image width={1200}
-    height={950}
-    objectFit="cover" src={posts[1].thumbnail} alt=""   
+            <div className='relative h-32' >
+            <Image 
+  fill src={posts[1].thumbnail} alt=""   
            
            />
            </div>
@@ -32,10 +30,9 @@ export default function Vignette(props) {
             </div>
             <div>
             
-            <div className='' >
-            <Image width={1200}
-    height={950}
-    objectFit="cover" src={posts[2].thumbnail} alt=""   
+            <div className='relative h-32' >
+            <Image
+   fill src={posts[2].thumbnail} alt=""   
            
            />
            </div>
@@ -43,10 +40,9 @@ export default function Vignette(props) {
             </div>
             <div>
            
-            <div className='' >
-            <Image width={1200}
-    height={950}
-    objectFit="cover" src={posts[3].thumbnail} alt=""   
+            <div className='relative h-32' >
+            <Image 
+    fill src={posts[3].thumbnail} alt=""   
            
            />
            </div>

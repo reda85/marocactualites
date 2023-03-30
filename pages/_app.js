@@ -1,9 +1,7 @@
 import React from 'react';
 import App, { Container } from 'next/app';
 import Layout from '../components/layout';
-import { config, library } from '@fortawesome/fontawesome-svg-core';
-import '@fortawesome/fontawesome-svg-core/styles.css';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 import * as gtag from '../lib/gtag';
 import Router from 'next/router';
 import '../styles/globals.css';
