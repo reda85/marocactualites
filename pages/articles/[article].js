@@ -21,7 +21,7 @@ export default function Article({ article }) {
       }
     }, [article])
     
-      return <div> Redirection vers l'article</div>
+      return <div> Redirection vers l&lsquo;article</div>
     
 
 

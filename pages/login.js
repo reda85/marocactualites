@@ -6,6 +6,7 @@ import {FaGoogle, FaFacebook, FaSignInAlt} from "react-icons/fa"
 
 import { firebaseClient } from '../firebaseClient';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 const Login = (_props) => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
@@ -143,7 +144,7 @@ const Login = (_props) => {
                     
                      </div>
                 <div class="col-9  col-12-xsmall">
-                        <div> Veuillez vous <a href="/signup">inscrire </a>si vous n'êtes pas encore inscrit</div>
+                        <div> Veuillez vous <Link href="/signup">inscrire </Link>si vous n&apos;êtes pas encore inscrit</div>
                         </div>
                 </div>
             

@@ -134,7 +134,7 @@ console.log("his.props.user", this.props.user)
                     <ol>
                         {
                             list.map((item) => (
-                                <li>{item}</li>
+                                <li key={item}>{item}</li>
                             ))
                         }
                     </ol>

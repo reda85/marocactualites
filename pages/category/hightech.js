@@ -9,7 +9,7 @@ import clientPromise from '../../util/mongodb'
   
 export const config = { amp: 'nonAmp' }
 
-export default function hightech({posts}) {
+export default function Hightech({posts}) {
   const isAmp = useAmp()
   return (
     <Page>

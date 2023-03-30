@@ -1,10 +1,10 @@
 
 import axios from 'axios';
 import React, { Component } from 'react'
-import Select from 'react-select'
+
 import feeds from '../data/feeds'
 import makeAnimated from 'react-select/animated';
-import checkbox from 'rc-checkbox'
+
 import {Button, createStandaloneToast}  from "@chakra-ui/react"
 import { FaSave } from "react-icons/fa";
 
@@ -162,7 +162,7 @@ console.log(data)
           <h3><strong>Choisissez les catégories qui vous intéressent</strong></h3>
           {this.state.categories.map(categorie => 
           
-            <div class="col-6 col-12-small">
+            <div key={categorie} class="col-6 col-12-small">
                 
             <input type="checkbox" id={categorie.value} name={categorie.value} value={categorie.value} defaultChecked={categorie.isChecked} onClick={this.onChangeCategories}  />
             <label for={categorie.value}>{categorie.value}</label>
@@ -171,13 +171,13 @@ console.log(data)
    <h3><strong>Choisissez les villes qui vous intéressent</strong></h3>
         
    {this.state.villes.map(ville =>
-            <div class="col-6 col-12-small">
+            <div key={ville} class="col-6 col-12-small">
             <input type="checkbox" id={ville.value} name={ville.value} value={ville.value} defaultChecked={ville.isChecked} onClick={this.onChangeVilles}/>
             <label for={ville.value}>{ville.value}</label>
         </div>)}
 <h3><strong>Choisissez les médias qui vous intéressent</strong></h3>
 {this.state.medias.map(media =>
-            <div class="col-6 col-12-small">
+            <div key={media} class="col-6 col-12-small">
             <input type="checkbox" id={media.value} name={media.value} value={media.value} defaultChecked={media.isChecked} onClick={this.onChangeMedias} />
             <label for={media.value} >{media.value}</label>
         </div>)}

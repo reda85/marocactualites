@@ -11,7 +11,7 @@ const FeedList = ({ feeds }) => {
               <a>
                 <amp-img src={`/static/images/${feed.slug}.png`} alt={feed.slug} width="60px"
       height="40px"
-      alt="a cool image">
+      >
     </amp-img>
                 
               </a>

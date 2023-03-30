@@ -13,7 +13,7 @@ import { Spinner } from "@chakra-ui/react"
   
 export const config = { amp: 'nonAmp' }
 
-export default function editArticle({posts}) {
+export default function EditArticle({posts}) {
   const {user} = useAuth()
   if(posts){
       console.log(" frk", posts)
@@ -22,7 +22,7 @@ export default function editArticle({posts}) {
         <h1>Liste des articles</h1>
       <ul>
       {posts.map(post => {
-       return <li><Link href={post.link}>{post.title}</Link></li>  
+       return <li key={post.title}><Link href={post.link}>{post.title}</Link></li>  
       })}
       </ul>
     </Page>

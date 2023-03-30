@@ -17,12 +17,12 @@ export default function Feed({ feed }) {
       {isAmp ? (
                 <amp-img src={`/static/images/${feed.slug}.png`} alt={feed.slug} width="110px"
       height="110px"
-      alt="a cool iage"
+     
       >
     </amp-img>) : (
       <img src={`/static/images/${feed.slug}.png`} alt={feed.slug} width="110px"
       height="110px"
-      alt="a cool image"
+     
       >
     </img>
     ) }

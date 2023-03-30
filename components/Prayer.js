@@ -46,7 +46,7 @@ export default class Prayer extends Component {
 															</thead>
 															<tbody>
                                                                 {this.props.prieres.prieres.map((priere,index) => (
-                                                                    <tr>
+                                                                    <tr key={index}>
                                                                       <td><a href={`${api_base}/priere/${priere.ville.city}`}>{priere.ville.city}</a></td>
 																	<td>{priere.Fajr}</td>
 																	<td>{priere.Dohr}</td>  

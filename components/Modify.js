@@ -153,12 +153,12 @@ onClose(e) {
     return (
       <div>
           <h2>Modifier un article</h2>
-          <h3><strong>Titre de l'article</strong></h3>
+          <h3><strong>Titre de l&apos;article</strong></h3>
           <input size="100" className="box" value={this.state.titre} onChange={this.handleChangeTitre} placeholder="Titre de l'article" />
           <h3><strong>Image (facultatif)</strong></h3>
           <input type="file" size="200" className="box" placeholder="Image (facultatif)" onChange={this.handleImageAsFile}/>
-          <Button margin='10px' leftIcon={<FaUpload />} colorScheme='red' isLoading={this.state.loading} onClick={this.handleUpload} disabled={!this.state.imageFile}>Uploader l'image</Button>
-       {this.state.url != '' ?  <Image height= {100} width= {160} src={this.state.url}></Image> : <p> Pas d'image choisie</p> }
+          <Button margin='10px' leftIcon={<FaUpload />} colorScheme='red' isLoading={this.state.loading} onClick={this.handleUpload} disabled={!this.state.imageFile}>Uploader l&apos;image</Button>
+       {this.state.url != '' ?  <Image height= {100} width= {160} src={this.state.url}></Image> : <p> Pas d&apos;image choisie</p> }
           <h3><strong>Catégorie</strong></h3>
           <select name="categories"  value={this.state.category} onChange={this.handleChangeCategorie} id="categories">
   <option value="sport" selected="selected">Sport</option>
@@ -169,7 +169,7 @@ onClose(e) {
 </select>
 <h3><strong>Accroche (facultatif)</strong></h3>
           <input size="100" className="box" value={this.state.accroche} onChange={this.handleChangeAccroche} placeholder="Accroche (facultatif)" />
-          <h3><strong>Corps de l'article </strong></h3>
+          <h3><strong>Corps de l&apos;article </strong></h3>
           
         
           <DefaultEditor value={this.state.article} onChange={this.onChange} />
@@ -178,7 +178,7 @@ onClose(e) {
           <Button leftIcon={<FaDownload />} colorScheme='green'
            onClick={this.onOpen}
           >
-            Modifier l'article
+            Modifier l&apos;article
           </Button>
           <AlertDialog
         isOpen={this.state.isOpen}
@@ -188,7 +188,7 @@ onClose(e) {
         <AlertDialogOverlay>
           <AlertDialogContent>
             <AlertDialogHeader fontSize="lg" fontWeight="bold">
-              Modifier l'article
+              Modifier l&apos;article
             </AlertDialogHeader>
 
             <AlertDialogBody>
@@ -200,7 +200,7 @@ onClose(e) {
                 Annuler
               </Button>
               <Button colorScheme="green" isLoading={this.state.loading} onClick={e => this.onSubmit(e)} ml={3}>
-                Modifier l'article
+                Modifier l&apos;article
               </Button>
             </AlertDialogFooter>
           </AlertDialogContent>

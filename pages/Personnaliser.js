@@ -13,7 +13,7 @@ import clientPromise from '../util/mongodb'
   
 export const config = { amp: 'nonAmp' }
 
-export default function personnaliser({myuser}) {
+export default function Personnaliser({myuser}) {
   const {user} = useAuth()
   
   return (

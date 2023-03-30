@@ -9,7 +9,7 @@ import  clientPromise  from '../../util/mongodb'
   
 export const config = { amp: 'nonAmp' }
 
-export default function culture({posts}) {
+export default function Culture({posts}) {
   const isAmp = useAmp()
   return (
     <Page>

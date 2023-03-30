@@ -96,7 +96,7 @@ function GeneralFeed ({ posts , ownposts, coviddata, hotposts}) {
 
         <div style = {{ marginTop:"40px", padding:"O O O O" , marginBottom:"10px" ,display:"flex", direction:"row", alignItems:"baseline",justifyContent:"space-between"  }}>
           <h2 style={{color:'#400090' ,marginBottom:"0px"}}>A la une</h2> 
-          <a href="/category/alaune" style={{ color:"blue", fontSize:"13px"}}><strong>Voir plus : A la une</strong></a> 
+          <Link href="/category/alaune" style={{ color:"blue", fontSize:"13px"}}><strong>Voir plus : A la une</strong></Link> 
           </div>
 						<div id="innercust" className="innercust" >
           <section style={{paddingTop:"10px"}}>
@@ -165,7 +165,7 @@ function GeneralFeed ({ posts , ownposts, coviddata, hotposts}) {
        
         <div style = {{ marginTop:"40px", padding:"O O O O" , marginBottom:"10px" ,display:"flex", direction:"row", alignItems:"baseline",justifyContent:"space-between" }}>
           <h2 style={{color:'blue',marginBottom:"0px"}}>Société</h2> 
-          <a href="/category/societe" style={{ color:"blue", fontSize:"13px"}}><strong>Voir plus : Société</strong></a> 
+          <Link href="/category/societe" style={{ color:"blue", fontSize:"13px"}}><strong>Voir plus : Société</strong></Link> 
           </div>
           <div id="innercust" className="innercust">
             <section style={{paddingTop:"10px"}}>
@@ -233,7 +233,7 @@ function GeneralFeed ({ posts , ownposts, coviddata, hotposts}) {
         </div> 
         <div style = {{ marginTop:"40px", padding:"O O O O" , marginBottom:"10px" ,display:"flex", direction:"row", alignItems:"baseline",justifyContent:"space-between" }}>
           <h2 style={{color:'orange',marginBottom:"0px"}}>Politique</h2> 
-          <a href="/category/politique" style={{ color:"blue", fontSize:"13px"}}><strong>Voir plus : Politique</strong></a> 
+          <Link href="/category/politique" style={{ color:"blue", fontSize:"13px"}}><strong>Voir plus : Politique</strong></Link> 
           </div>
           <div id="innercust" className="innercust">
             <section style={{paddingTop:"10px"}}>
@@ -299,7 +299,7 @@ function GeneralFeed ({ posts , ownposts, coviddata, hotposts}) {
         </div> 
         <div style = {{ marginTop:"40px", padding:"O O O O" , marginBottom:"10px" ,display:"flex", direction:"row", alignItems:"baseline",justifyContent:"space-between" }}>
           <h2 style={{color:'brown',marginBottom:"0px"}}>Economie</h2> 
-          <a href="/category/economie" style={{ color:"blue", fontSize:"13px"}}><strong>Voir plus : Economie</strong></a> 
+          <Link href="/category/economie" style={{ color:"blue", fontSize:"13px"}}><strong>Voir plus : Economie</strong></Link> 
           </div>
           <div id="innercust" className="innercust">
             <section style={{paddingTop:"10px"}}>
@@ -370,7 +370,7 @@ function GeneralFeed ({ posts , ownposts, coviddata, hotposts}) {
 
          <div style = {{ marginTop:"40px", padding:"O O O O" , marginBottom:"10px" ,display:"flex", direction:"row", alignItems:"baseline",justifyContent:"space-between"}}>
           <h2 style={{color:'green', marginBottom:"0px"}}>Sport</h2> 
-          <a href="/category/sport" style={{ color:"blue", fontSize:"13px"}}><strong>Voir plus : Sport</strong></a> 
+          <Link href="/category/sport" style={{ color:"blue", fontSize:"13px"}}><strong>Voir plus : Sport</strong></Link> 
           </div>
           <div id="innercust" className="innercust">
             <section style={{paddingTop:"10px"}}>
@@ -451,7 +451,7 @@ function GeneralFeed ({ posts , ownposts, coviddata, hotposts}) {
 
         <div style = {{ marginTop:"40px", padding:"O O O O" , marginBottom:"10px" ,display:"flex", direction:"row", alignItems:"baseline",justifyContent:"space-between"}}>
           <h2 style={{color:'pink', marginBottom:"0px"}}>People</h2> 
-          <a href="/category/people" style={{ color:"pink", fontSize:"13px"}}><strong>Voir plus : People</strong></a> 
+          <Link href="/category/people" style={{ color:"pink", fontSize:"13px"}}><strong>Voir plus : People</strong></Link> 
           </div>
           <div id="innercust" className="innercust">
             <section style={{paddingTop:"10px"}}>

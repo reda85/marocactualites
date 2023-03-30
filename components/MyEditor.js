@@ -46,6 +46,6 @@ const formats = [
   'video',
 ]
 
-export default () => (
+export default MyEditor()  (
   <QuillNoSSRWrapper modules={modules} formats={formats} theme="snow" />
 )

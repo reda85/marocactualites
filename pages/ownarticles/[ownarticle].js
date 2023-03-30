@@ -217,7 +217,7 @@ function Ownarticle({ article, lastposts }) {
                                 
                                     {article[0].statut == "draft" ? 
                                     <div className="row">
-                                    <Button  leftIcon={<FaThumbsUp/>} colorScheme="green" m={5} onClick={() => setIsOpen(true)}> Valider l'article</Button> 
+                                    <Button  leftIcon={<FaThumbsUp/>} colorScheme="green" m={5} onClick={() => setIsOpen(true)}> Valider l&apos;article</Button> 
                                     <AlertDialog
         isOpen={isOpen}
         leastDestructiveRef={cancelRef}
@@ -226,7 +226,7 @@ function Ownarticle({ article, lastposts }) {
         <AlertDialogOverlay>
           <AlertDialogContent>
             <AlertDialogHeader fontSize="lg" fontWeight="bold">
-              Valider l'article
+              Valider l&apos;article
             </AlertDialogHeader>
 
             <AlertDialogBody>
@@ -238,13 +238,13 @@ function Ownarticle({ article, lastposts }) {
                 Annuler
               </Button>
               <Button colorScheme="green" isLoading={isloading} onClick={e => onSubmit(e, article)} ml={3}>
-                Valider l'article
+                Valider l&apos;article
               </Button>
             </AlertDialogFooter>
           </AlertDialogContent>
         </AlertDialogOverlay>
       </AlertDialog>
-                                    <Button leftIcon={<FaTimes/>} colorScheme="red" m={5} onClick={() => setIsOpen2(true)}>Rejeter l'article</Button> 
+                                    <Button leftIcon={<FaTimes/>} colorScheme="red" m={5} onClick={() => setIsOpen2(true)}>Rejeter l&apos;article</Button> 
                                    
                                     <AlertDialog
         isOpen={isOpen2}
@@ -254,7 +254,7 @@ function Ownarticle({ article, lastposts }) {
         <AlertDialogOverlay>
           <AlertDialogContent>
             <AlertDialogHeader fontSize="lg" fontWeight="bold">
-              Rejeter l'article
+              Rejeter l&apos;article
             </AlertDialogHeader>
 
             <AlertDialogBody>
@@ -266,7 +266,7 @@ function Ownarticle({ article, lastposts }) {
                 Annuler
               </Button>
               <Button colorScheme="red" isLoading={isloading} onClick={e => onDelete(e, article)} ml={3}>
-                Rejeter l'article
+                Rejeter l&apos;article
               </Button>
             </AlertDialogFooter>
           </AlertDialogContent>

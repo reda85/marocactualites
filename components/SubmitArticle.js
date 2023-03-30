@@ -184,7 +184,7 @@ export default class SubmitArticle extends Component {
     return (
       <div>
           <h2>Soumettre un article</h2>
-          <h3><strong>Titre de l'article</strong></h3>
+          <h3><strong>Titre de l&apos;article</strong></h3>
           <input size="100" className="box" placeholder="Titre de l'article" />
           <h3><strong>Image (facultatif)</strong></h3>
           <input size="100" className="box" placeholder="Image (facultatif)" />
@@ -195,7 +195,7 @@ export default class SubmitArticle extends Component {
   <option value="economie">Economie</option>
   <option value="politique">Politique</option>
 </select>
-          <h3><strong>Corps de l'article</strong></h3>
+          <h3><strong>Corps de l&apos;article</strong></h3>
         <div
           ref={(elem) => {
             this.elemWidth = elem ? elem.clientWidth : 0

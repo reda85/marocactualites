@@ -44,7 +44,7 @@ export default class Stats extends Component {
 															</thead>
 															<tbody>
                                                                 {this.props.posts.map((post,index) => (
-                                                                    <tr>
+                                                                    <tr key={index}>
                                                                       <td><a href={post.link}>{post.title}</a></td>
 																	<td>{post.reads}</td>
 																	<td>{post.created}</td>  

@@ -38,7 +38,7 @@ export default function Ville({ prieres, ville }) {
 															</thead>
 															<tbody>
                                                                 {prieres.map((priere,index) => (
-                                                                    <tr>
+                                                                    <tr key={index}>
                                                                       <td>{priere.date}</td>
 																	<td>{priere.Fajr}</td>
 																	<td>{priere.Dohr}</td>  

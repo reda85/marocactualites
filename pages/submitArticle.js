@@ -13,7 +13,7 @@ import  clientPromise  from '../util/mongodb'
   
 export const config = { amp: 'nonAmp' }
 
-export default function submitArticl({posts}) {
+export default function SubmitArticl({posts}) {
   const {user} = useAuth()
   
   return (

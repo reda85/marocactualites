@@ -20,7 +20,7 @@ const LastArticles = ({ Lastposts  } ) => {
             new Date(post.created),
             {locale: fr} // Pass the locale as an option
           )
-        return(<article>
+        return(<article key={post}>
             <a style={{marginBottom : "10px", paddingBottom: '0px'}} href={`${api_base}/ownarticles/${post.slug}`} class="image"><h3 style={{marginBottom : "0px", paddingBottom: '0px'}}>{post.title}</h3></a>
            <p style={{marginTop : "0px", paddingTop: '0px'}} className="icon solid fa-clock"> Il y a {dateresult}</p> 
             <p>{striptags(post.accroche).slice(0,100)} ...</p>
