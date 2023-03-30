@@ -1,15 +1,14 @@
-import { getServerSideSitemap } from 'next-sitemap'
+import { getServerSideSitemap, getServerSideSitemapLegacy } from 'next-sitemap'
 import { GetServerSideProps } from 'next'
-import clientPromise  from '../../util/mongodb'
+import clientPromise from '../../util/mongodb'
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   // Method to source urls from cms
   // const urls = await fetch('https//example.com/api')
   const client = await clientPromise
   const db = client.db('articles');
-  let isConnected = true;
 
-  
+  const isConnected = await client.isConnected()
 let ownposts=[]
   if (isConnected) {
     console.log("imken  here2")
@@ -28,7 +27,7 @@ let ownposts=[]
   const fields = ownposts.map(post => Object({ loc : 'https://marocactualites.com/ownarticles/' + post.slug , lastmod: new Date().toISOString()}))
   
 
-  return getServerSideSitemap(ctx, fields)
+  return getServerSideSitemapLegacy(ctx, fields)
 }
 
 // Default export to prevent next.js errors
