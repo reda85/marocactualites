@@ -1,10 +1,12 @@
 
-import { connectToDatabase } from '../../../util/mongodb'
+import clientPromise  from '../../../util/mongodb'
 import { ObjectId } from 'mongodb';
 
 export default async (req, res) => {
     console.log("tfouu", req.query)
-    const { db, client } = await connectToDatabase()
+    const client = await clientPromise
+    const db = client.db('articles');
+    let isConnected = true; 
   try{  
 
     var d = await db.collection('ownarticles').find({ slug : req.query.modifyarticle}).toArray()

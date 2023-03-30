@@ -1,13 +1,12 @@
-import feeds from '../data/feeds';
+
 import Page from '../components/page';
-import FeedList from '../components/feed-list';
-import SoumettreArticle from '../components/SoumettreArticle';
+
 import striptags from 'striptags';
 import { useAuth } from '../auth';
 import {firebaseAdmin} from '../firebaseAdmin'
 import nookies from 'nookies'
-import  clientPromise  from '../util/mongodb'
-import { List, ListItem, ListIcon, OrderedList, UnorderedList } from "@chakra-ui/react"
+import clientPromise from '../util/mongodb'
+
 import Link from 'next/link';
 import { Spinner } from "@chakra-ui/react"
   
@@ -39,7 +38,7 @@ export default function editArticle({posts}) {
 
   export const getServerSideProps = async (ctx) => {
     console.log("tfouu")
-    try {
+    
         const cookies = nookies.get(ctx);
         console.log('mirde', JSON.stringify(cookies, null, 2));
         const token = await firebaseAdmin.auth().verifyIdToken(cookies.token);
@@ -49,6 +48,7 @@ export default function editArticle({posts}) {
       
         const client = await clientPromise
         const db = client.db('articles');
+        let isConnected = true;
             let user = await db.collection('users').find({email : email}).toArray()
           console.log("user", user)  
   if ((user[0].role!="admin"))
@@ -84,18 +84,5 @@ export default function editArticle({posts}) {
   return {
         props : {posts: JSON.parse(JSON.stringify(posts))}
       };
-    }
-    catch (err) {
-        // either the `token` cookie didn't exist
-        // or token verification failed
-        // either way: redirect to the login page
-        console.log('erreeeee ', err)
-        ctx.res.writeHead(302, { Location: '/login' });
-        ctx.res.end();
-        // `as never` prevents inference issues
-        // with InferGetServerSidePropsType.
-        // The props returned here don't matter because we've
-        // already redirected the user.
-        return { props: {} };
-    }
+    
   };

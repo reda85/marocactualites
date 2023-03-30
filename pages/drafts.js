@@ -42,7 +42,7 @@ export const getServerSideProps = async (ctx) => {
   
     const client = await clientPromise
     const db = client.db('articles');
-       
+    let isConnected = true; 
   var Feed = require('rss-to-json'); 
   const filtered =  feeds
   let fposts, posts=[]

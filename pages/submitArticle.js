@@ -6,7 +6,7 @@ import striptags from 'striptags';
 import { useAuth } from '../auth';
 import {firebaseAdmin} from '../firebaseAdmin'
 import nookies from 'nookies'
-import { connectToDatabase } from '../util/mongodb'
+import  clientPromise  from '../util/mongodb'
 
 
   
@@ -27,7 +27,7 @@ export default function submitArticl({posts}) {
 }
 export const getServerSideProps = async (ctx) => {
     console.log("tfouu")
-    try {
+    
         const cookies = nookies.get(ctx);
         console.log('mirde', JSON.stringify(cookies, null, 2));
         const token = await firebaseAdmin.auth().verifyIdToken(cookies.token);
@@ -35,29 +35,14 @@ export const getServerSideProps = async (ctx) => {
         const { uid, email } = token;
         // FETCH STUFF HERE!! 🚀
       
-            const { db } = await connectToDatabase()
+        const client = await clientPromise
+        const db = client.db('articles');
+        let isConnected = true; 
             let user = await db.collection('users').find({email : email}).toArray()
           console.log("user", user)  
-  if ((user[0].role!="author") && (user[0].role!="admin"))
-        {
-            ctx.res.writeHead(302, { Location: '/' });
-            ctx.res.end();
-        }
+  
         return {
             props: {},
         };
-    }
-    catch (err) {
-        // either the `token` cookie didn't exist
-        // or token verification failed
-        // either way: redirect to the login page
-        console.log('erreeeee ', err)
-        ctx.res.writeHead(302, { Location: '/login' });
-        ctx.res.end();
-        // `as never` prevents inference issues
-        // with InferGetServerSidePropsType.
-        // The props returned here don't matter because we've
-        // already redirected the user.
-        return { props: {} };
-    }
+   
   };

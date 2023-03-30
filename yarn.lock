@@ -4875,6 +4875,11 @@ react-share@^4.4.1:
     classnames "^2.3.2"
     jsonp "^0.2.1"
 
+react-simple-wysiwyg@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/react-simple-wysiwyg/-/react-simple-wysiwyg-2.2.2.tgz#34a455ed857ca5568bb5a5e6edfaaf0b427dd039"
+  integrity sha512-aXZL3IbAIJyqZ3BDvZcmxZiCUZ9B/R/+3DHdjpCIAqvg165QahWQ6TZZ3jujMYakMDEw7LUj04QJ3VL23og9VA==
+
 react-style-singleton@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/react-style-singleton/-/react-style-singleton-2.2.1.tgz#f99e420492b2d8f34d38308ff660b60d0b1205b4"
