@@ -12,8 +12,6 @@
     "@chakra-ui/react": "^2.5.4",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
-   
-   
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "date-fns": "^2.29.3",
     "firebase-admin": "^11.5.0",
@@ -23,6 +21,7 @@
     "mongodb": "^5.1.0",
     "next": "13.2.4",
     "next-seo": "^5.15.0",
+    "next-sitemap": "^4.0.6",
     "nookies": "^2.5.2",
     "nprogress": "^0.2.0",
     "postcss-flexbugs-fixes": "^5.0.2",
