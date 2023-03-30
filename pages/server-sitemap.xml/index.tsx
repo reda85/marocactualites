@@ -1,13 +1,15 @@
 import { getServerSideSitemap } from 'next-sitemap'
 import { GetServerSideProps } from 'next'
-import { connectToDatabase } from '../../util/mongodb'
+import clientPromise  from '../../util/mongodb'
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   // Method to source urls from cms
   // const urls = await fetch('https//example.com/api')
-  const { db, client } = await connectToDatabase()
+  const client = await clientPromise
+  const db = client.db('articles');
+  let isConnected = true;
 
-  const isConnected = await client.isConnected()
+  
 let ownposts=[]
   if (isConnected) {
     console.log("imken  here2")
