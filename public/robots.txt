@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /_next/static/
+# Host
+Host: https://marocactualites.com
+
+# Sitemaps
+Sitemap: https://marocactualites.com/sitemap.xml
+Sitemap: https://marocactualites.com/server-sitemap.xml
