@@ -2,12 +2,14 @@
 import feeds from '../../../data/feeds';
 import { distanceInWordsToNow } from 'date-fns';
 import striptags from 'striptags';
-import { connectToDatabase } from '../../../util/mongodb'
+import clientPromise from '../../../util/mongodb'
 import { ObjectId } from 'mongodb';
 
 export default async (req, res) => {
     console.log("tfouu", req.query)
-    const { db, client } = await connectToDatabase()
+    const client = await clientPromise
+    const db = client.db('articles');
+    let isConnected = true;
     var updatenumreads = await db.collection('articles').update({ _id: ObjectId(req.query.article) },
       {
         $inc: { reads: 1 }})

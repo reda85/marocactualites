@@ -1,11 +1,13 @@
 import feeds from '../../../data/feeds';
-import {connectToDatabase} from '../../../util/mongodb'
+import clientPromise from '../../../util/mongodb'
 
 export default async (req, res) => {
     
     console.log("req nom", req.body)
   res.status(200).json(JSON.stringify(Object.assign({}, feeds)));
-  const { db, client } = await connectToDatabase()
+  const client = await clientPromise
+    const db = client.db('articles');
+    let isConnected = true;
 
  
     if (req.body.nom && req.body.prenom) {

@@ -4,7 +4,7 @@ import feeds from '../../../data/feeds';
 import { firebaseClient } from '../../../firebaseClient';
 import nookies from "nookies";
 import { firebaseAdmin} from '../../../firebaseAdmin'
-import {connectToDatabase} from '../../../util/mongodb'
+import clientPromise from '../../../util/mongodb'
 
 export default async (req, res) => {
 

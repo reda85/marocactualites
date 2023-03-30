@@ -3,7 +3,7 @@ import Page from '../components/page';
 import { useAmp } from 'next/amp'
 import Stats from '../components/stats';
 import striptags from 'striptags';
-import { connectToDatabase } from '../util/mongodb'
+import clientPromise from '../util/mongodb'
 
 import {firebaseAdmin} from '../firebaseAdmin'
 import nookies from 'nookies'
@@ -40,8 +40,9 @@ export const getServerSideProps = async (ctx) => {
     const { uid, email } = token;
     // FETCH STUFF HERE!! 🚀
   
-        const { db, client } = await connectToDatabase()
-        const isConnected = await client.isConnected()
+    const client = await clientPromise
+    const db = client.db('articles');
+    let isConnected = true;
        
   var Feed = require('rss-to-json'); 
   const filtered =  feeds

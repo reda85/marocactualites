@@ -3,7 +3,7 @@ import Page from '../../components/page';
 import { useAmp } from 'next/amp'
 import PostList from '../../components/post-list';
 import striptags from 'striptags';
-import { connectToDatabase } from '../../util/mongodb'
+import  clientPromise  from '../../util/mongodb'
 
 
   
@@ -23,9 +23,9 @@ export default function Tanger({posts}) {
 }
 
 export async function getServerSideProps() {
-  const { db, client } = await connectToDatabase()
-
-  const isConnected = await client.isConnected()
+  const client = await clientPromise
+  const db = client.db('articles');
+  let isConnected = true;
   var Feed = require('rss-to-json'); 
   const filtered =  feeds
   let posts=[]
