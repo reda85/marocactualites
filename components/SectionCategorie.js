@@ -30,8 +30,8 @@ export default function SectionCategorie(props) {
            <div className='  text-gray-500 text-sm'>{myposts[0].accroche}</div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
-<div className='relative w-full aspect-video' >
+        <div className=" grid grid-cols-2 md:grid-cols-1">
+<div className='relative  mr-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[1].thumbnail} alt=""   
            
@@ -41,8 +41,8 @@ export default function SectionCategorie(props) {
            <div className='my-4 font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[1].title}</div>
            </Link>
         </div>
-        <div>
-<div className='relative w-full aspect-video' >
+        <div className="grid grid-cols-2 md:grid-cols-1">
+<div className='relative w-1/2 mx-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[2].thumbnail} alt=""   
            
@@ -52,8 +52,8 @@ export default function SectionCategorie(props) {
            <div className='my-4 font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[2].title}</div>
            </Link>
         </div>
-        <div>
-<div className='relative w-full aspect-video' >
+        <div className="grid grid-cols-2 md:grid-cols-1">
+<div className='relative  mr-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[3].thumbnail} alt=""   
            
@@ -63,8 +63,8 @@ export default function SectionCategorie(props) {
            <div className='my-4 font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[3].title}</div>
            </Link>
         </div>
-        <div>
-<div className='relative w-full aspect-video' >
+        <div className="grid grid-cols-2 md:grid-cols-1">
+<div className='relative  mr-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[4].thumbnail} alt=""   
            

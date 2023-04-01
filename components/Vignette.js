@@ -26,7 +26,7 @@ export default function Vignette(props) {
            />
            </div>
            <Link href={api_base + posts[0].slug}>
-           <div className='my-4 hover:cursor-pointer hover:opacity-50 font-semibold text-black text-2xl'>{posts[1].title}</div>
+           <div className='my-4 hover:cursor-pointer hover:opacity-50 font-semibold text-black text-2xl'>{posts[0].title}</div>
            </Link>
         </div>
          
