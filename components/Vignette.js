@@ -30,7 +30,7 @@ export default function Vignette(props) {
            </Link>
         </div>
          
-        <div className=' my-12 grid grid-cols-3 gap-8'>
+        <div className=' my-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
 
             <div>
            

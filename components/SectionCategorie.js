@@ -16,7 +16,7 @@ export default function SectionCategorie(props) {
                 <div className={cat}></div>
                 <div className="mr-1 w-full h-4 bg-gray-100"></div>
             </div>
-            <div className="grid grid-cols-2 gap-4 my-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-2">
                 <div className="">
 <div className='relative w-full aspect-video ' >
             <Image fill priority
@@ -29,7 +29,7 @@ export default function SectionCategorie(props) {
            </Link>
            <div className='  text-gray-500 text-sm'>{myposts[0].accroche}</div>
         </div>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
 <div className='relative w-full aspect-video' >
             <Image fill
