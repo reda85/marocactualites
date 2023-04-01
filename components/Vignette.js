@@ -14,7 +14,7 @@ export default function Vignette(props) {
     console.log("api_base", api_base + posts[0].slug)
     return(
         <div className='flex  flex-row' >
-            <div className='w-2/3' >
+            <div className='w-full md:w-2/3' >
         <div className='   my-3' >
             <div className='py-6 font-bold font-Lora text-black text-3xl'>
             À la une
