@@ -30,7 +30,7 @@ export default function SectionCategorie(props) {
            <div className='  text-gray-500 text-sm'>{myposts[0].accroche}</div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className=" grid grid-cols-2 md:grid-cols-1">
+        <div className=" grid grid-cols-2 md:grid-cols-1 ">
 <div className='relative  mr-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[1].thumbnail} alt=""   
@@ -38,11 +38,11 @@ export default function SectionCategorie(props) {
            />
            </div>
            <Link href={api_base + myposts[1].slug}>
-           <div className='my-4 font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[1].title}</div>
+           <div className='my-4  font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[1].title}</div>
            </Link>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-1">
-<div className='relative w-1/2 mx-2 md:w-full aspect-video' >
+<div className='relative  mx-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[2].thumbnail} alt=""   
            
