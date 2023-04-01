@@ -201,16 +201,16 @@ function Ownarticle({ article, lastposts }) {
                                    
 									{article[0].thumbnail ? <span class="image main"><img src={article[0].thumbnail} alt="image_article" /></span> : null}
 
-                  <Text as="u" m="0"  >Par : la Rédaction</Text>               
+                  <div className=' underline'  >Par : la Rédaction</div>               
 
 									<h2 className='mt-8 font-Rubik'>{article[0].accroche}</h2>
-								<div className='mt-8 font-Lora leading-loose  text-gray-800 text-lg '>	{parse(content)} </div>
+								<div className='mt-8 leading-loose text-gray-800 text-lg '>	{parse(content)} </div>
                 
   
   
 								{article[0].keywords ? <HStack> <Icon as= {FaTags} />
   <span>&nbsp;</span> 
-  <Text as="b" m="0"  >Mots-clés : { article[0].keywords.map(keyword => keyword + ',')}</Text>	</HStack> : null }
+  <div className='font-bold'  >Mots-clés : { article[0].keywords.map(keyword => keyword + ',')}</div>	</HStack> : null }
                 
               	</section>
 

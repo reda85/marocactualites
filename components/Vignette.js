@@ -19,7 +19,7 @@ export default function Vignette(props) {
             <div className='py-6 font-bold font-Lora text-black text-3xl'>
             À la une
             </div>
-            <div className='relative w-128 h-96' >
+            <div className='relative w-full aspect-video' >
             <Image fill priority
      src={posts[0].thumbnail} alt=""   
            
