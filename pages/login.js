@@ -15,7 +15,7 @@ const Login = (_props) => {
     const [loadingG, setLoadingG] = useState(false)
     const toast = useToast()
     const router = useRouter()
-    let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/' : 'http://localhost:3000';
+    let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/' : 'http://localhost:3000';
     const provider = new firebaseClient.auth.GoogleAuthProvider();
     const fprovider = new firebaseClient.auth.FacebookAuthProvider();
     return (

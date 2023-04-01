@@ -46,7 +46,7 @@ export const getServerSideProps = async (ctx) => {
   var Feed = require('rss-to-json'); 
   const filtered =  feeds
   let fposts, posts=[]
-  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/' : 'http://localhost:3000';
+  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/' : 'http://localhost:3000';
   console.log("imken  here " , filtered )
     if (filtered.length > 0 && isConnected) {
       console.log("imken  here2")

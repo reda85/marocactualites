@@ -58,7 +58,7 @@ export default function Ville({ prieres, ville }) {
 
 Ville.getInitialProps = async ({ res, query }) => {
     console.log("hrhrhrhr", query)
-  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/' : 'http://localhost:3000';
+  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/' : 'http://localhost:3000';
   let r = await fetch(`${api_base}/api/prieres/${query.ville}`);
   //let r = await fetch(`http://localhost:3000/api/feeds/${query.slug}`)
   let prieres = await r.json();

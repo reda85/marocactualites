@@ -15,7 +15,7 @@ export default function ModifyArticle({article}) {
   }
   export const getServerSideProps = async (ctx) => {
     console.log("miirde", ctx.query)
-  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/' : 'http://localhost:3000';
+  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/' : 'http://localhost:3000';
   let r = await fetch(`${api_base}/api/modifyarticles/${ctx.query.modifyarticle}`);
   //let r = await fetch(`http://localhost:3000/api/feeds/${query.slug}`)
   let article = await r.json();

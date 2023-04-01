@@ -16,8 +16,8 @@ import { useRouter } from 'next/router';
 //export const config = { amp: 'nonAmp' }
 
 const Page = props => {
-  var canURL = "https://marocactualites.com"
-  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/' : 'http://localhost:3000';
+  var canURL = "https://marocactualites.vercel.app"
+  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/' : 'http://localhost:3000';
   const router= useRouter()
   const [active, setActive] = useState(false);
   const [opener, setOpener] = useState(true);
@@ -154,7 +154,7 @@ const Page = props => {
             </header>
             <p>Vous pouvez nous contacter sur les adresses suivantes</p>
             <ul className="contact">
-              <li className="icon solid fa-envelope"><a href="#">contact@marocactualites.com</a></li>
+              <li className="icon solid fa-envelope"><a href="#">contact@marocactualites.vercel.app</a></li>
              
                
             </ul>

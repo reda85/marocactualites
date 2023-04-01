@@ -24,7 +24,7 @@ let ownposts=[]
  ownposts = await db.collection('ownarticles').find({statut : 'valid'}).sort({created : -1}).toArray()
   }
 
-  const fields = ownposts.map(post => Object({ loc : 'https://marocactualites.com/ownarticles/' + post.slug , lastmod: new Date().toISOString()}))
+  const fields = ownposts.map(post => Object({ loc : 'https://marocactualites.vercel.app/ownarticles/' + post.slug , lastmod: new Date().toISOString()}))
   
 
   return getServerSideSitemapLegacy(ctx, fields)

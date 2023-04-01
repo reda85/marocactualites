@@ -42,8 +42,8 @@ function Ownarticle({ article, lastposts }) {
   const cancelRef = useRef()
     console.log("aaaaaaaarticle de mierda ", article)
     console.log("myuser", user)
-    const url = "https://marocactualites.com/ownarticles/" + article[0].slug
-    const api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/' : 'http://localhost:3000';
+    const url = "https://marocactualites.vercel.app/ownarticles/" + article[0].slug
+    const api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/' : 'http://localhost:3000';
    
  const onSubmit = async (e, article) => {
         e.preventDefault();
@@ -177,7 +177,7 @@ function Ownarticle({ article, lastposts }) {
 })}</Text>
  
                                         </div> 
-										<h1 className='font-Lora'>{article[0].title}</h1>
+										<h1 className='font-Rubik'>{article[0].title}</h1>
                    
                                        
                                         <div className="row">
@@ -203,8 +203,8 @@ function Ownarticle({ article, lastposts }) {
 
                   <Text as="u" m="0"  >Par : la Rédaction</Text>               
 
-									<h2 className='mt-8 font-Lora'>{article[0].accroche}</h2>
-								<div className='mt-8 font-Rubik  text-gray-800 text-lg '>	{parse(content)} </div>
+									<h2 className='mt-8 font-Rubik'>{article[0].accroche}</h2>
+								<div className='mt-8 font-Lora leading-loose  text-gray-800 text-lg '>	{parse(content)} </div>
                 
   
   

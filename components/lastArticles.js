@@ -4,7 +4,7 @@ import {formatDistance, formatDistanceToNow} from 'date-fns'
 import { fr } from 'date-fns/locale'
 
 const LastArticles = ({ Lastposts  } ) => {
-  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/' : 'http://localhost:3000';
+  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/' : 'http://localhost:3000';
   
   return (
 

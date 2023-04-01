@@ -18,7 +18,7 @@ export default class Prayer extends Component {
   
 
   render() {
-    let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/' : 'http://localhost:3000';
+    let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/' : 'http://localhost:3000';
     let todaydate = format(new Date(), "'le' cccc dd MMMM yyyy ", {
         locale: fr})
     if(this.props.prieres != null){

@@ -30,7 +30,7 @@ export async function getServerSideProps() {
   let posts =[]
   let ownposts=[]
   console.log("imken  here " , filtered )
-  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/' : 'http://localhost:3000';
+  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/' : 'http://localhost:3000';
     if (filtered.length > 0 && isConnected) {
       console.log("imken  here2")
 
