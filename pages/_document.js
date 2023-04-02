@@ -39,64 +39,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
          
-          {/* AMP - Google Analytics */}
-          <AmpWrap
-            ampOnly={
-                <div>
-                    
-                    <AmpForm  /> 
-            <AmpAdSense type="adsense" data_ca_id = {DATA_CA_ID}> 
-
-
-            </AmpAdSense>
-              <AmpAnalytics
-                type="googleanalytics"
-                script={{
-                  vars: {
-                    account: GA_TRACKING_ID,
-                    gtag_id: GA_TRACKING_ID,
-                    config: {
-                      [GA_TRACKING_ID]: { groups: 'default' },
-                    },
-                  },
-                  triggers: {
-                    trackPageview: {
-                      on: 'visible',
-                      request: 'pageview',
-                    },
-                  },
-                }}
-              />
-              </div>
-            }
-            
-          />
-
-          {/* Non-AMP - Google Analytics */}
-          <AmpWrap
-            nonAmp={
-              <>
-              <script data-ad-client="ca-pub-1131650691837357" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <script
-                  async
-                  src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-                />
-                <script
-                  dangerouslySetInnerHTML={{
-                    __html: `
-                      window.dataLayer = window.dataLayer || [];
-                      function gtag(){dataLayer.push(arguments);}
-                      gtag('js', new Date());
-                      gtag('config', '${GA_TRACKING_ID}');
-                    `,
-                  }}
-                />
-                
-
-
-              </>
-            }
-          />
+         
       
         
           
