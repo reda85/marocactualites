@@ -11,6 +11,13 @@ export default function SectionCategorie(props) {
    
     return(
         <div className="my-12">
+            <div>
+                
+            </div>
+
+
+
+
             <div className="flex flex-row items-center justify-start my-16">
                <div className="text-xl font-extrabold text-black"> {category.toUpperCase()} </div>
                 <div className={cat}></div>
@@ -18,60 +25,70 @@ export default function SectionCategorie(props) {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-2">
                 <div className="">
-<div className='relative w-full aspect-video ' >
+                <Link href={api_base + myposts[0].slug}>
+<div className='relative hover:cursor-pointer  w-full aspect-video ' >
             <Image fill priority
      src={myposts[0].thumbnail} alt=""   
            
            />
            </div>
+           </Link>
            <Link href={api_base + myposts[0].slug}>
            <div className='my-4 font-semibold text-black text-xl hover:cursor-pointer hover:opacity-50'>{myposts[0].title}</div>
            </Link>
            <div className='  text-gray-500 text-sm'>{myposts[0].accroche}</div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className=" grid grid-cols-2 md:grid-cols-1 ">
-<div className='relative  mr-2 md:w-full aspect-video' >
+        <div className=" grid grid-cols-2 place-content-start md:grid-cols-1 ">
+        <Link href={api_base + myposts[1].slug}>
+<div className='relative hover:cursor-pointer  mr-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[1].thumbnail} alt=""   
            
            />
            </div>
+           </Link>
            <Link href={api_base + myposts[1].slug}>
-           <div className='my-4  font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[1].title}</div>
+           <div className='  font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[1].title}</div>
            </Link>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-1">
-<div className='relative  mx-2 md:w-full aspect-video' >
+        <div className="grid grid-cols-2 place-content-start md:grid-cols-1">
+        <Link href={api_base + myposts[2].slug}>
+<div className='relative hover:cursor-pointer  mr-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[2].thumbnail} alt=""   
            
            />
            </div>
+           </Link>
            <Link href={api_base + myposts[2].slug}>
-           <div className='my-4 font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[2].title}</div>
+           <div className=' font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[2].title}</div>
            </Link>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-1">
-<div className='relative  mr-2 md:w-full aspect-video' >
+        <div className="grid place-content-start grid-cols-2 md:grid-cols-1">
+        <Link href={api_base + myposts[3].slug}>
+<div className='relative hover:cursor-pointer  mr-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[3].thumbnail} alt=""   
            
            />
            </div>
+           </Link>
            <Link href={api_base + myposts[3].slug}>
-           <div className='my-4 font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[3].title}</div>
+           <div className=' font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[3].title}</div>
            </Link>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-1">
-<div className='relative  mr-2 md:w-full aspect-video' >
+        <div className="grid grid-cols-2 place-content-start md:grid-cols-1">
+        <Link href={api_base + myposts[4].slug}>
+<div className='relative hover:cursor-pointer  mr-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[4].thumbnail} alt=""   
            
            />
            </div>
+           </Link>
            <Link href={api_base + myposts[4].slug}>
-           <div className='my-4 font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[4].title}</div>
+           <div className=' font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[4].title}</div>
         </Link>
         </div>
         </div>

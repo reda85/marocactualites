@@ -19,12 +19,14 @@ export default function Vignette(props) {
             <div className='py-6 font-bold font-Lora text-black text-3xl'>
             À la une
             </div>
-            <div className='relative w-full aspect-video' >
+            <Link href={api_base + posts[0].slug}>
+            <div className='relative w-full aspect-video hover:cursor-pointer' >
             <Image fill priority
      src={posts[0].thumbnail} alt=""   
            
            />
            </div>
+           </Link>
            <Link href={api_base + posts[0].slug}>
            <div className='my-4 hover:cursor-pointer hover:opacity-50 font-semibold text-black text-2xl'>{posts[0].title}</div>
            </Link>
@@ -33,13 +35,14 @@ export default function Vignette(props) {
         <div className=' my-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
 
             <div>
-           
-            <div className='relative h-32' >
+            <Link href={api_base + posts[1].slug}>
+            <div className='relative hover:cursor-pointer h-32' >
             <Image 
   fill src={posts[1].thumbnail} alt=""   
            
            />
            </div>
+           </Link>
            <div className={cat(1,posts)}>{posts[1].category.toUpperCase()}</div>
            <Link href={api_base + posts[1].slug}>
            
@@ -47,26 +50,28 @@ export default function Vignette(props) {
            </Link>
             </div>
             <div>
-            
-            <div className='relative h-32' >
+            <Link href={api_base + posts[2].slug}>
+            <div className='relative hover:cursor-pointer h-32' >
             <Image
    fill src={posts[2].thumbnail} alt=""   
            
            />
            </div>
+           </Link>
            <div className={cat(2,posts)}>{posts[2].category.toUpperCase()}</div>
            <Link href={api_base + posts[2].slug}>
            <div className='my-2 hover:cursor-pointer hover:opacity-50 font-semibold text-black text-lg'>{posts[2].title}</div>
            </Link>
             </div>
             <div>
-           
-            <div className='relative h-32' >
+            <Link href={api_base + posts[3].slug}>
+            <div className='relative h-32 hover:cursor-pointer' >
             <Image 
     fill src={posts[3].thumbnail} alt=""   
            
            />
            </div>
+           </Link>
            <div className={cat(3,posts)}>{posts[3].category.toUpperCase()}</div>
            <Link href={api_base + posts[3].slug}>
            <div className='my-2 hover:cursor-pointer hover:opacity-50 font-semibold text-black text-lg'  >{posts[3].title}</div>

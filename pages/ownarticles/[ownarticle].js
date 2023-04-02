@@ -204,7 +204,7 @@ function Ownarticle({ article, lastposts }) {
                   <div className=' underline'  >Par : la Rédaction</div>               
 
 									<h2 className='mt-8 font-Rubik'>{article[0].accroche}</h2>
-								<div className='mt-8 font-Rubik leading-loose text-gray-800 text-lg '>	{parse(content)} </div>
+								<div className='mt-8  md:leading-loose text-gray-800 text-lg '>	{parse(content)} </div>
                 
   
   

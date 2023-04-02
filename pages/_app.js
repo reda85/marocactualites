@@ -10,7 +10,7 @@ import '../public/nprogress.css';
 import {AuthProvider} from '../auth'
 import NProgress from 'nprogress';
 
-import { ThemeProvider, theme, CSSReset } from '@chakra-ui/react'
+import { ThemeProvider, theme, ToastProvider } from '@chakra-ui/react'
 
 
 
@@ -51,7 +51,7 @@ class MyApp extends App {
         <Layout>
          <AuthProvider>
          <ThemeProvider theme={theme}>
-        
+        <ToastProvider />
           <Component {...pageProps} />
           </ThemeProvider>
           </AuthProvider>

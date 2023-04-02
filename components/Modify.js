@@ -11,7 +11,7 @@ import { FaDownload, FaUpload } from 'react-icons/fa';
 import { DefaultEditor } from 'react-simple-wysiwyg';
 import Image from 'next/image'
 
-const toast = createStandaloneToast()
+
 
 export default class Modify extends Component {
   constructor(props) {

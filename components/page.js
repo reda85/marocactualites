@@ -7,9 +7,11 @@ import { useAmp } from 'next/amp'
 import { useAuth } from '../auth';
 import { firebaseClient } from "../firebaseClient";
 import { Icon } from "@chakra-ui/react"
-import { FaChevronDown, FaEdit, FaSignInAlt, FaSignOutAlt, FaUserCircle} from "react-icons/fa"
+import { FaBars, FaChevronDown, FaEdit, FaSignInAlt, FaSignOutAlt, FaUserCircle} from "react-icons/fa"
 import { Button, ButtonGroup,Link,Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react"
 import { useRouter } from 'next/router';
+import Drawer from 'react-ui-drawer'
+import VerticalMenu from './verticalMenu';
 
 
 
@@ -24,6 +26,11 @@ const Page = props => {
   const [deconnexion, setDeconnexion] = useState(false);
   const isAmp = useAmp()
   const { user, loading } = useAuth();
+  const [showDrawer, setShowDrawer] = useState(false)
+
+  const handleOpenDrawer = () => {
+    setShowDrawer(prevState => !prevState)
+  }
 
   console.log("useeer", user)
   console.log("loading", loading)
@@ -52,11 +59,13 @@ const Page = props => {
           <div id="main">
             <div className="inner">
               {/* Header */}
-              <header style={{marginTop:'10px', display:'flex', flexDirection:'row', alignItems:'center' , justifyContent:'center'}}   >
-               
-              <a href={`${api_base}`}  ><Image src='/Logo KamalnoPoint PNG.png' alt='Maroc actualités' height='75' width='250'></Image> </a>
-              
+              <header style={{marginTop:'10px', display:'flex', flexDirection:'row', alignItems:'center' , justifyContent:"space-between"}}   >
+               <FaBars className='h-7 w-7 hover:cursor-pointer hover:scale-110 text-red-400 stroke-w-2'
+               onClick={() => setShowDrawer(prevState => !prevState)} />
+              <a href={`${api_base}`}  ><Image src='/Logo KamalnoPoint PNG.png' priority alt='Maroc actualités' height='75' width='250'></Image> </a>
+              <div></div>
                 
+            
                   
                  
                 
@@ -96,7 +105,12 @@ const Page = props => {
                 
               </header>
               {/* Banner */}
-              <div className='flex flex-row justify-center items-center py-4 font-semibold text-base shadow-sm'>
+              {showDrawer && (
+        <Drawer requestClose={() => setShowDrawer(false)}>
+          <VerticalMenu />
+        </Drawer>
+      )}
+              <div className='hidden md:flex flex-row justify-center items-center py-4 font-semibold text-base shadow-sm'>
                 <div className='mx-6 hover:cursor-pointer'>Politique</div>
                 <div className='mx-6 hover:cursor-pointer'>Economie</div>
                 <div className='mx-6 hover:cursor-pointer'>Sport</div>

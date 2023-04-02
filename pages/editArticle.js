@@ -3,7 +3,7 @@ import Page from '../components/page';
 
 import striptags from 'striptags';
 import { useAuth } from '../auth';
-import {firebaseAdmin} from '../firebaseAdmin'
+//import {firebaseAdmin} from '../firebaseAdmin'
 import nookies from 'nookies'
 import clientPromise from '../util/mongodb'
 
@@ -41,22 +41,22 @@ export default function EditArticle({posts}) {
     
         const cookies = nookies.get(ctx);
         console.log('mirde', JSON.stringify(cookies, null, 2));
-        const token = await firebaseAdmin.auth().verifyIdToken(cookies.token);
+       // const token = await firebaseAdmin.auth().verifyIdToken(cookies.token);
         // the user is authenticated!
-        const { uid, email } = token;
+       // const { uid, email } = token;
         // FETCH STUFF HERE!! 🚀
       
         const client = await clientPromise
         const db = client.db('articles');
         let isConnected = true;
-            let user = await db.collection('users').find({email : email}).toArray()
+   /*         let user = await db.collection('users').find({email : email}).toArray()
           console.log("user", user)  
   if ((user[0].role!="admin"))
         {
             ctx.res.writeHead(302, { Location: '/' });
             ctx.res.end();
         }
-
+*/
         let posts =[]
     let fposts=[]
   
