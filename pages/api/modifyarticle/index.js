@@ -24,7 +24,7 @@ export default async (req, res) => {
 res = await db.collection('ownarticles').updateOne(
     
     
-    { _id: ObjectId(req.body.id )},
+    { _id: new ObjectId(req.body.id )},
     {
       $set: {
         article : req.body.article,
