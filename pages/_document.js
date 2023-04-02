@@ -32,25 +32,7 @@ export default class MyDocument extends Document {
           
           <div>
       
-     <script type="text/javascript" dangerouslySetInnerHTML={{__html: `
-  const configSFBXAppConsent = {
-    appKey: '475a79d8-ca2c-4bbf-8ca3-290df67295f6'
-  }`
-      }}>
-</script>
-<script src="https://cdn.appconsent.io/loader-clear.js" defer async></script>
-      
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-<ins class="adsbygoogle"
-     style={{display:"block"}}
-     data-ad-client="ca-pub-1131650691837357"
-     data-ad-slot="5304254186"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+   
 
 
 </div>
