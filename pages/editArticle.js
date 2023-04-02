@@ -3,13 +3,13 @@ import Page from '../components/page';
 
 import striptags from 'striptags';
 import { useAuth } from '../auth';
-//import {firebaseAdmin} from '../firebaseAdmin'
+import {firebaseAdmin} from '../firebaseAdmin'
 import nookies from 'nookies'
 import clientPromise from '../util/mongodb'
 
 import Link from 'next/link';
 import { Spinner } from "@chakra-ui/react"
-  
+
   
 export const config = { amp: 'nonAmp' }
 

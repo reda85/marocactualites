@@ -120,7 +120,7 @@ function Ownarticle({ article, lastposts }) {
             });
     } 
 
-    const content = "<div style={{overflow-wrap: break-word}} class=\"col-8 col-12-small\"> <p >"+article[0].article+"<p></div>"
+    const content = "<div className='break-words mt-8 text-lg  leading-loose text-gray-800  '> "+article[0].article+"</div>"
     if (router.isFallback) {
       return <div>Loading...</div>
     }  
@@ -204,7 +204,7 @@ function Ownarticle({ article, lastposts }) {
                   <div className=' underline'  >Par : la Rédaction</div>               
 
 									<h2 className='mt-8 font-Rubik'>{article[0].accroche}</h2>
-								<div className='mt-8  md:leading-loose text-gray-800 text-lg '>	{parse(content)} </div>
+									{parse(content)} 
                 
   
   
@@ -277,33 +277,13 @@ function Ownarticle({ article, lastposts }) {
                                     : null }
                                     <div>
 
-                                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-<ins class="adsbygoogle"
-     style={{display:"block"}}
-     data-ad-client="ca-pub-1131650691837357"
-     data-ad-slot="2496119838"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+                                   
                                     </div>
                                     
                                     <LastArticles Lastposts={lastposts}></LastArticles>
       </div>
       <div style={{marginTop : "30px"}} className="col-4 col-12-small">
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-<ins class="adsbygoogle"
-     style={{display:"block"}}
-     data-ad-client="ca-pub-1131650691837357"
-     data-ad-slot="4226335605"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+     
       </div>
       </div>
       

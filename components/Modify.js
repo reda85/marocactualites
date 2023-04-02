@@ -10,10 +10,12 @@ import {firebaseClient} from '../firebaseClient'
 import { FaDownload, FaUpload } from 'react-icons/fa';
 import { DefaultEditor } from 'react-simple-wysiwyg';
 import Image from 'next/image'
+import { useToast } from '@chakra-ui/react';
 
 
 
 export default class Modify extends Component {
+  
   constructor(props) {
     super(props);
     this.cancelRef = createRef();
@@ -89,6 +91,7 @@ export default class Modify extends Component {
 
   onSubmit = async (e) => {
     e.preventDefault();
+   
     // get our form data out of state
     console.log("zzaaaa7")
     const {id, titre, article,  accroche, category, url, html} = this.state;
@@ -100,13 +103,13 @@ console.log('data', data)
             //access the resp here....
             var payload = JSON.stringify(response.data.json, null, 2);
             console.log(`response fetched. ${payload}`);
-            toast({
+          /*  toast({
               title: "Article soumis avec succès.",
               
               status: "success",
               duration: 9000,
               isClosable: true,
-            })   
+            })  */ 
             
             
             this.setState({
@@ -119,13 +122,13 @@ console.log('data', data)
         })
         .catch((error) => {
             console.log(error);
-            toast({
+          /*  toast({
               title: "Erreur de soumission de l'article.",
               
               status: "error",
               duration: 9000,
               isClosable: true,
-            })   
+            })  */ 
             
             
             this.setState({
@@ -147,9 +150,10 @@ onOpen(e) {
 onClose(e) {
   this.setState({isOpen : false});
 }
-
+ 
   render() {
  console.log("perrrrrrrops", this.props)
+ 
     return (
       <div>
           <h2>Modifier un article</h2>
