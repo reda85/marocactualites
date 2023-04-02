@@ -3,7 +3,7 @@ import Page from '../components/page';
 
 import striptags from 'striptags';
 import { useAuth } from '../auth';
-import {firebaseAdmin} from '../firebaseAdmin'
+
 import nookies from 'nookies'
 import clientPromise from '../util/mongodb'
 
@@ -16,7 +16,7 @@ export const config = { amp: 'nonAmp' }
 export default function EditArticle({posts}) {
   const {user} = useAuth()
   if(posts){
-      console.log(" frk", posts)
+   //  console.log(" frk", posts)
   return (
     <Page>
         <h1>Liste des articles</h1>
