@@ -1,3 +1,4 @@
+import { Adsense } from '@ctrl/react-adsense'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -79,7 +80,22 @@ export default function Vignette(props) {
             </div>
         </div>
         </div>
-       
+        <div class="my-3 md:hidden adsbygoogle">
+        <Adsense 
+     style={{display:block}}
+     format="fluid"
+     layoutKey="-hs-s+1c-5f+cv"
+     data-ad-client="ca-pub-1131650691837357"
+    slot="9669767968"></Adsense>
+     </div>
+     <div class="my-3 hidden md:block adsbygoogle">
+        <Adsense 
+     style={{display:block}}
+     format="fluid"
+     layoutKey="-h7-2g+1-79+wn"
+     data-ad-client="ca-pub-1131650691837357"
+     slot="3487502992"></Adsense>
+     </div>
         </div>
     )
 }
