@@ -1,4 +1,6 @@
 import striptags from "striptags";
+import Image from "next/image";
+import Link from "next/link";
 
 const PostList = ({ posts , title, isAmp, icon, col } ) => {
   let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/' : 'http://localhost:3000';
@@ -18,26 +20,30 @@ const PostList = ({ posts , title, isAmp, icon, col } ) => {
         var localdate = new Intl.DateTimeFormat('fr-FR').format(new Date(post.created))
         
         return (
+          <div className="md:w-2/3 w-full">
           <div className="post" style = {{ borderBottom:"2px", borderBottomColor:"black", padding:"15px 15px 15px 15px", paddingRight:"10px", marginLeft:"0px", marginRight:"0px",  }} key={i}>
-            <h3>{post.title}</h3>
+           
             
-            <div className="info" >
+            <div  >
              
-              <time>{localdate} </time>
+             
             </div>
-            <div style={{display:"flex", direction:"row" ,alignItems:"flex-start"}}>
-            {(isAmp && post.thumbnail && post.source != 'Telquel')? <span  style={{marginRight:"20px"}}className="image thumb"><amp-img src={post.thumbnail} alt="" width="200px" height="100px"/></span> : null}
-            {(!isAmp && post.thumbnail && post.source != 'Telquel')? <span  style={{marginRight:"20px"}}className="image thumb"><img src={post.thumbnail} alt="" width="200px" height="100px"/></span> : null}
-            <div className="preview">
-              {post.source == 'Maroc Actualités' ? striptags(post.article).slice(0,100) : post.preview}
-              {'... '}
-             {post.source == 'Maroc Actualités' ? <a href={`${api_base}/ownarticles/${post.slug}`} >
-                lire plus sur {post.source}
-              </a> :
-              <a href={post.link} >
-              lire plus sur {post.source}
-            </a>}
+            <div className="flex w-full flex-row">
+         
+           
+             <div className="relative h-32 aspect-video">
+              <Image src={post.thumbnail} alt="" fill />
+              </div> 
+            <div className=" mx-4 flex flex-col">
+            <h3 className=" text-xl font-Lora">{post.title}</h3>
+            <time>{localdate} </time>
+             
+             
+             { <Link className="text-gray-800" href={`${api_base}/ownarticles/${post.slug}`} >
+             {post.accroche}
+              </Link> }
             </div>
+          </div>
           </div>
           </div>
           

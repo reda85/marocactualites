@@ -24,6 +24,7 @@ import {format} from 'date-fns'
 import {FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, WhatsappShareButton, WhatsappIcon} from 'react-share'
 import { useAuth } from '../../auth';
 import clientPromise from '../../util/mongodb'
+import Image from 'next/image';
 
 export const config = { amp: 'nonAmp' }
 
@@ -199,7 +200,7 @@ function Ownarticle({ article, lastposts }) {
                                         </div>
 									</header>
                                    
-									{article[0].thumbnail ? <span class="image main"><img src={article[0].thumbnail} alt="image_article" /></span> : null}
+									{article[0].thumbnail ? <div className="relative h-96 aspect-auto"><Image src={article[0].thumbnail} alt="image_article" fill priority /></div> : null}
 
                   <div className=' underline'  >Par : la Rédaction</div>               
 
