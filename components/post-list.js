@@ -20,7 +20,7 @@ const PostList = ({ posts , title, isAmp, icon, col } ) => {
         var localdate = new Intl.DateTimeFormat('fr-FR').format(new Date(post.created))
         
         return (
-          <div className="md:w-2/3 w-full">
+          <div className="md:w-2/3 w-full" key={i}>
           <div className="post" style = {{ borderBottom:"2px", borderBottomColor:"black", padding:"15px 15px 15px 15px", paddingRight:"10px", marginLeft:"0px", marginRight:"0px",  }} key={i}>
            
             
