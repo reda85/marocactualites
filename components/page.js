@@ -111,11 +111,11 @@ const Page = props => {
         </Drawer>
       )}
               <div className='hidden md:flex flex-row justify-center items-center py-4 font-semibold text-base shadow-sm'>
-                <div className='mx-6 hover:cursor-pointer'>Politique</div>
-                <div className='mx-6 hover:cursor-pointer'>Economie</div>
-                <div className='mx-6 hover:cursor-pointer'>Sport</div>
-                <div className='mx-6 hover:cursor-pointer'>Société</div>
-                <div className='mx-6 hover:cursor-pointer'>People</div>
+                <div className='mx-6 hover:cursor-pointer hover:scale-110 hover:text-orange-500 ' onClick={() => {router.push('/category/politique')}}>Politique</div>
+                <div className='mx-6 hover:cursor-pointer hover:scale-110  hover:text-red-500' onClick={() => {router.push('/category/economie')}}>Economie</div>
+                <div className='mx-6 hover:cursor-pointer hover:scale-110  hover:text-green-500' onClick={() => {router.push('/category/sport')}}>Sport</div>
+                <div className='mx-6 hover:cursor-pointer hover:scale-110  hover:text-blue-500' onClick={() => {router.push('/category/societe')}}>Société</div>
+                <div className='mx-6 hover:cursor-pointer hover:scale-110  hover:text-indigo-500' onClick={() => {router.push('/category/people')}}>People</div>
               </div>
               {/* Section */}
               {props.children}

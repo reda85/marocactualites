@@ -6,8 +6,12 @@ const PostList = ({ posts , title, isAmp, icon, col } ) => {
   return (
     <div id="main" >
           <div className="row">
-						<div className="col-9 col-12-small" >
-            <h2 className={icon} style={{color:col}}> &nbsp; {title}</h2>
+						<div  >
+            <div className="flex flex-row items-center justify-start my-16">
+               <div className="text-xl font-extrabold text-black"> {title} </div>
+                <div className={col}></div>
+                <div className="mr-1 w-full h-4 bg-gray-100"></div>
+            </div>
           <section style={{marginTop:'60px'}}> 
       {posts.map((post, i) => {
 

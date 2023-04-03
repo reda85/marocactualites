@@ -14,7 +14,7 @@ export default function Sport({posts}) {
   return (
     <Page>
       
-      <PostList posts={posts} title="Tous les articles Sport" isAmp={isAmp} col="green" icon="icon solid fa-basketball-ball"></PostList>
+      <PostList posts={posts} title="Sport" isAmp={isAmp} col="mx-2 w-4 h-4 bg-green-500" icon="icon solid fa-basketball-ball"></PostList>
     </Page>
   );
 

@@ -14,7 +14,7 @@ export default function Economie({posts}) {
   return (
     <Page>
       
-      <PostList posts={posts} title="Tous les articles Economie" icon="icon solid fa-chart-line" col="brown" isAmp={isAmp}></PostList>
+      <PostList posts={posts} title="Economie" icon="icon solid fa-chart-line" col="mx-2 w-4 h-4 bg-red-500" isAmp={isAmp}></PostList>
     </Page>
   );
 
@@ -53,7 +53,8 @@ posts = posts.filter(item => {return( item.category.includes("économie") || ite
 //console.log("hnaaaa", posts)
   
     return {
-      props : {posts}
+      props : {posts: JSON.parse(JSON.stringify(posts)) 
+      }
     };
 };
  

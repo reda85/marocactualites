@@ -15,7 +15,7 @@ export default function Societe({posts}) {
   return (
     <Page>
       
-      <PostList posts={posts} title="Tous les articles Société" icon="icon solid fa-users" col="blue" isAmp={isAmp}></PostList>
+      <PostList posts={posts} title="Société" icon="icon solid fa-users" col="mx-2 w-4 h-4 bg-blue-500" isAmp={isAmp}></PostList>
     </Page>
   );
 

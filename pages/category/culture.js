@@ -14,7 +14,7 @@ export default function Culture({posts}) {
   return (
     <Page>
       
-      <PostList posts={posts} title="Tous les articles Culture" icon="icon solid fa-theater-masks" col="gray" isAmp={isAmp}></PostList>
+      <PostList posts={posts} title="Culture" icon="icon solid fa-theater-masks" col="mx-2 w-4 h-4 bg-yellow-500" isAmp={isAmp}></PostList>
     </Page>
   );
 
@@ -49,7 +49,8 @@ posts = posts.map(post => post.item)
 posts = posts.concat(ownposts)
 posts = posts.filter(item => {return( item.category.includes("culture") || item.category.includes("Culture") || item.category.includes("CULTURE")) })
     return {
-      props : {posts}
+      props : {posts: JSON.parse(JSON.stringify(posts)) 
+      }
     };
 };
   

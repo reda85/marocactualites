@@ -14,7 +14,7 @@ export default function Politique({posts}) {
   return (
     <Page>
       
-      <PostList posts={posts} title="Tous les articles Politique" icon="icon solid fa-handshake" col="orange" isAmp={isAmp}></PostList>
+      <PostList posts={posts} title="Politique" icon="icon solid fa-handshake" col="mx-2 w-4 h-4 bg-orange-500" isAmp={isAmp}></PostList>
     </Page>
   );
 
@@ -49,7 +49,8 @@ posts = posts.map(post => post.item)
 posts = posts.concat(ownposts)
 posts = posts.filter(item => {return( item.category.includes("politique") || item.category.includes("Politique") || item.category.includes("POLITIQUE")) })
     return {
-      props : {posts}
+      props : {posts: JSON.parse(JSON.stringify(posts)) 
+      }
     };
 };
   

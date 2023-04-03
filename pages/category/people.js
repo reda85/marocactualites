@@ -14,7 +14,7 @@ export default function People({posts}) {
   return (
     <Page>
       
-      <PostList posts={posts} title="Tous les articles People" icon="icon solid fa-star" col="pink" isAmp={isAmp}></PostList>
+      <PostList posts={posts} title="People" icon="icon solid fa-star" col="mx-2 w-4 h-4 bg-indigo-500" isAmp={isAmp}></PostList>
     </Page>
   );
 
@@ -49,7 +49,8 @@ posts = posts.map(post => post.item)
 posts = posts.concat(ownposts)
 posts = posts.filter(item => {return( item.category.includes("people") || item.category.includes("People") || item.category.includes("PEOPLE")) })
     return {
-      props : {posts}
+      props : {posts: JSON.parse(JSON.stringify(posts)) 
+      }
     };
 };
   

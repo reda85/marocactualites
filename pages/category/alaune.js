@@ -14,7 +14,7 @@ export default function AlaUne({posts}) {
   return (
     <Page>
       
-      <PostList posts={posts} title="Tous les articles à la une" isAmp={isAmp} icon="icon solid fa-clock"></PostList>
+      <PostList posts={posts} title="La une" col="mx-2 w-4 h-4 bg-red-500" isAmp={isAmp} icon="icon solid fa-clock"></PostList>
     </Page>
   );
 
