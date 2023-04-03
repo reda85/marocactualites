@@ -25,6 +25,7 @@ import {FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, What
 import { useAuth } from '../../auth';
 import clientPromise from '../../util/mongodb'
 import Image from 'next/image';
+import { Adsense } from '@ctrl/react-adsense';
 
 export const config = { amp: 'nonAmp' }
 
@@ -168,7 +169,7 @@ function Ownarticle({ article, lastposts }) {
 						<div style={{marginTop : "30px"}} className="col-8 col-12-small" >
 
 <section>
-									<header class="main">
+									<header className="main">
                                     <div className="row "> 
                                         <Text className=' font-Rubik font-bold' m="0"  color='green'>{article[0].category}</Text>
                                         <span> </span>
@@ -280,6 +281,14 @@ function Ownarticle({ article, lastposts }) {
 
                                    
                                     </div>
+                                    <div className="text-center adsbygoogle my-3">
+                                    <Adsense
+  client="ca-pub-1131650691837357"
+  slot="6027117993"
+  style={{ display: 'block' }}
+  
+  format="auto-relaxed"
+/></div>
                                     
                                     <LastArticles Lastposts={lastposts}></LastArticles>
       </div>

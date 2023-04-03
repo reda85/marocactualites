@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^2.5.4",
+    "@ctrl/react-adsense": "^1.6.1",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@fullhuman/postcss-purgecss": "^5.0.0",
