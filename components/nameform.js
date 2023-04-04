@@ -41,7 +41,7 @@ await this.props.user.updateProfile({
             .then((response) => {
                 //access the resp here....
                 var payload = JSON.stringify(response.data.json, null, 2);
-                console.log(`response fetched. ${payload}`);
+              //  console.log(`response fetched. ${payload}`);
                 this.setState({
                     nom: "",
                     prenom:"",
@@ -58,7 +58,7 @@ await this.props.user.updateProfile({
                   this.setState({loading : false})
             })
             .catch((error) => {
-                console.log(error);
+              //  console.log(error);
                 this.setState({
                     errorLabelHidden: false,
                     errorLabel: "OoPS that didn't work :("

@@ -60,7 +60,7 @@ onSubmit = async (e) => {
     const toast = createStandaloneToast()
     this.setState({loading : true})
     e.preventDefault();
-    console.log('mmouk')
+    //console.log('mmouk')
         await this.props.user.updatePassword(this.state.password).then(result => {
             toast({
                 title: "Mot de passe modifié avec succès.",
@@ -70,7 +70,7 @@ onSubmit = async (e) => {
                 isClosable: true,
               })
            this.setState({loading : false})
-console.log("his.props.user", this.props.user)
+//console.log("his.props.user", this.props.user)
           }).catch(function(error) {
             toast({
                 title: "Erreur de modification de mot de passe.",
@@ -93,7 +93,7 @@ reset = () => {
   }
 
     render() {
-console.log("prooooops", this.props)
+//console.log("prooooops", this.props)
         const {nom, password, list, errorLabel} = this.state;
        
         if (this.props.user) {
@@ -119,9 +119,9 @@ console.log("prooooops", this.props)
                     <ul class="actions">
                         <li><Button colorScheme="green" isLoading={this.state.loading} leftIcon={<FaKey />} onClick={async () => {
     
-    console.log('mmouk')
+    //console.log('mmouk')
         await this.props.user.updatePassword(this.state.password)
-console.log("his.props.user", this.props.user)
+//console.log("his.props.user", this.props.user)
           
 }}> Changer le mot de passe</Button></li>
                         <li><Button  onClick={this.reset} >Annuler</Button></li>

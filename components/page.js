@@ -32,8 +32,8 @@ const Page = props => {
     setShowDrawer(prevState => !prevState)
   }
 
-  console.log("useeer", user)
-  console.log("loading", loading)
+ // console.log("useeer", user)
+ // console.log("loading", loading)
   
   return (
   

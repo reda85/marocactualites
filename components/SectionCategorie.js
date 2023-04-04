@@ -94,17 +94,17 @@ export default function SectionCategorie(props) {
         </div>
         </div>
         </div>
-        <div class="my-3 md:hidden adsbygoogle">
+        <div className="my-3 md:hidden adsbygoogle">
         <Adsense 
-     style={{display:block}}
+     style={{display:'block'}}
      format="fluid"
      layoutKey="-hs-s+1c-5f+cv"
      data-ad-client="ca-pub-1131650691837357"
     slot="9669767968"></Adsense>
      </div>
-     <div class="my-3 hidden md:block adsbygoogle">
+     <div className="my-3 hidden md:flex adsbygoogle">
         <Adsense 
-     style={{display:block}}
+     style={{display:'block'}}
      format="fluid"
      layoutKey="-h7-2g+1-79+wn"
      data-ad-client="ca-pub-1131650691837357"

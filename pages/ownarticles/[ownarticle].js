@@ -42,8 +42,8 @@ function Ownarticle({ article, lastposts }) {
   const onClose = () => setIsOpen(false)
   const onClose2 = () => setIsOpen2(false)
   const cancelRef = useRef()
-    console.log("aaaaaaaarticle de mierda ", article)
-    console.log("myuser", user)
+    //console.log("aaaaaaaarticle de mierda ", article)
+    //console.log("myuser", user)
     const url = "https://marocactualites.vercel.app/ownarticles/" + article[0].slug
     const api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/' : 'http://localhost:3000';
    
@@ -58,7 +58,7 @@ function Ownarticle({ article, lastposts }) {
             .then((response) => {
                 //access the resp here....
                 var payload = JSON.stringify(response.data.json, null, 2);
-                console.log(`response fetched. ${payload}`);
+               // console.log(`response fetched. ${payload}`);
                 toast({
                     title: "Article validé avec succès.",
                     
@@ -96,7 +96,7 @@ function Ownarticle({ article, lastposts }) {
             .then((response) => {
                 //access the resp here....
                 var payload = JSON.stringify(response.data.json, null, 2);
-                console.log(`response fetched. ${payload}`);
+                //console.log(`response fetched. ${payload}`);
                 toast({
                     title: "Article rejeté avec succès.",
                     
@@ -320,7 +320,7 @@ export async function getStaticPaths() {
   const paths = posts.map((post) => ({
     params: { ownarticle: post.slug , id: post._id.toString() },
   }))
-  console.log("paths", paths[paths.length - 1])
+ // console.log("paths", paths[paths.length - 1])
   // We'll pre-render only these paths at build time.
   // { fallback: false } means other routes should 404.
   return { paths, fallback: 'blocking' }
@@ -351,7 +351,7 @@ export async function getStaticProps({params}) {
     var updatenumreads = await db.collection('ownarticles').updateOne({ slug : params.ownarticle },
     {
       $inc: { reads: 1 }})
-console.log("hmmm", params)
+//console.log("hmmm", params)
 
 //hotposts.forEach(post => { post._id = post._id });
 
@@ -359,7 +359,7 @@ console.log("hmmm", params)
 //hotposts = hotposts.map(post => post.item)
 
 
-console.log("aaaarticle", JSON.stringify(articlem))
+//console.log("aaaarticle", JSON.stringify(articlem))
 
 
 return {

@@ -4,7 +4,7 @@ import {Button, createStandaloneToast} from '@chakra-ui/react'
 
 export default async (req, res) => {
   const toast=createStandaloneToast()
-    console.log("req nom", req.body)
+   // console.log("req nom", req.body)
   //res.status(200).json(JSON.stringify(Object.assign({}, feeds)));
   const client = await clientPromise
   const db = client.db('articles');
@@ -12,7 +12,7 @@ export default async (req, res) => {
 
  
     if (req.body.article && req.body.titre) {
-      console.log("req booody email", req.body.email)
+     // console.log("req booody email", req.body.email)
 
       
       

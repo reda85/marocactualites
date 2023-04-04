@@ -12,19 +12,19 @@ export function AuthProvider({ children }) {
         if (typeof window !== "undefined") {
             window.nookies = nookies;
         }
-        console.log(`nemmiiiiiiii`);
-        console.log(`loading f auth `, loading);
+      //  console.log(`nemmiiiiiiii`);
+      //  console.log(`loading f auth `, loading);
         return firebaseClient.auth().onIdTokenChanged(async (user) => {
-            console.log(`token changed!`);
+           // console.log(`token changed!`);
             if (!user) {
-                console.log(`no token found...`);
+               // console.log(`no token found...`);
                 setUser(null);
                 setLoading(false);
                 nookies.destroy(null, "token");
                 nookies.set(null, "token", "", {});
                 return;
             }
-            console.log(`updating token...`);
+           // console.log(`updating token...`);
             const token = await user.getIdToken();
             setLoading(false)
             setUser(user);

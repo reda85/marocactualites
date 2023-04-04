@@ -52,7 +52,7 @@ export async function getServerSideProps() {
   var Feed = require('rss-to-json'); 
   const filtered =  feeds
   let posts=[]
-  console.log("imken  here " , filtered )
+  //console.log("imken  here " , filtered )
     if (filtered.length > 0 && isConnected) {
       console.log("imken  here2")
 

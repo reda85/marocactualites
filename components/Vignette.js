@@ -12,7 +12,7 @@ export default function Vignette(props) {
         return  'my-2 font-bold ' + colors[categories.indexOf(posts[index].category)] 
     }
     const api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/ownarticles/' : 'http://localhost:3000/ownarticles/';
-    console.log("api_base", api_base + posts[0].slug)
+   // console.log("api_base", api_base + posts[0].slug)
     return(
         <div className='flex  flex-row' >
             <div className='w-full md:w-2/3' >
@@ -80,17 +80,17 @@ export default function Vignette(props) {
             </div>
         </div>
         </div>
-        <div class="my-3 md:hidden adsbygoogle">
+        <div className="my-3 md:hidden adsbygoogle">
         <Adsense 
-     style={{display:block}}
+     style={{display:'block'}}
      format="fluid"
      layoutKey="-hs-s+1c-5f+cv"
      data-ad-client="ca-pub-1131650691837357"
     slot="9669767968"></Adsense>
      </div>
-     <div class="my-3 hidden md:block adsbygoogle">
+     <div className="my-3 hidden md:flex adsbygoogle">
         <Adsense 
-     style={{display:block}}
+     style={{display:'block'}}
      format="fluid"
      layoutKey="-h7-2g+1-79+wn"
      data-ad-client="ca-pub-1131650691837357"

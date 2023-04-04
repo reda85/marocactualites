@@ -29,7 +29,7 @@ export async function getServerSideProps() {
   const filtered =  feeds
   let posts=[]
   let ownposts=[]
-  console.log("imken  here " , filtered )
+  //console.log("imken  here " , filtered )
     if (filtered.length > 0 && isConnected) {
       console.log("imken  here2")
 

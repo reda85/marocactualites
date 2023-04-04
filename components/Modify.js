@@ -93,16 +93,16 @@ export default class Modify extends Component {
     e.preventDefault();
    
     // get our form data out of state
-    console.log("zzaaaa7")
+   // console.log("zzaaaa7")
     const {id, titre, article,  accroche, category, url, html} = this.state;
 let data = {id: id,titre : titre, article : article, accroche: accroche, category: category, image: url}
 
-console.log('data', data)
+//console.log('data', data)
     axios.post('/api/modifyarticle', data)
         .then((response) => {
             //access the resp here....
             var payload = JSON.stringify(response.data.json, null, 2);
-            console.log(`response fetched. ${payload}`);
+        //    console.log(`response fetched. ${payload}`);
           /*  toast({
               title: "Article soumis avec succès.",
               
@@ -121,7 +121,7 @@ console.log('data', data)
            
         })
         .catch((error) => {
-            console.log(error);
+        //    console.log(error);
           /*  toast({
               title: "Erreur de soumission de l'article.",
               
@@ -152,7 +152,7 @@ onClose(e) {
 }
  
   render() {
- console.log("perrrrrrrops", this.props)
+ //console.log("perrrrrrrops", this.props)
  
     return (
       <div>
