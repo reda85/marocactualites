@@ -44,8 +44,8 @@ function Ownarticle({ article, lastposts }) {
   const cancelRef = useRef()
     //console.log("aaaaaaaarticle de mierda ", article)
     //console.log("myuser", user)
-    const url = "https://marocactualites.vercel.app/ownarticles/" + article[0].slug
-    const api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/' : 'http://localhost:3000';
+    const url = "https://marocactualites.com/ownarticles/" + article[0].slug
+    const api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/' : 'http://localhost:3000';
    
  const onSubmit = async (e, article) => {
         e.preventDefault();

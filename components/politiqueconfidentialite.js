@@ -8,7 +8,7 @@ function PolitiqueConfidentialite () {
            <h2> Information concernant l&apos;utilisation des cookies</h2>
  
  
- <p>Lors de la consultation de notre site marocactualites.vercel.app, des informations sont susceptibles d&apos;être enregistrées dans des fichiers &quot;Cookies&quot; installés dans votre ordinateur, tablette ou téléphone mobile. Cette page permet de comprendre ce qu&apos;est un Cookie, à quoi il sert et comment on peut le paramétrer.</p>
+ <p>Lors de la consultation de notre site marocactualites.com, des informations sont susceptibles d&apos;être enregistrées dans des fichiers &quot;Cookies&quot; installés dans votre ordinateur, tablette ou téléphone mobile. Cette page permet de comprendre ce qu&apos;est un Cookie, à quoi il sert et comment on peut le paramétrer.</p>
   
   
  <h3>QU’EST-CE QU’UN COOKIE ?</h3>

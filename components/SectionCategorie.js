@@ -7,7 +7,7 @@ export default function SectionCategorie(props) {
     const {posts,category,color} = props
     let cat = "mx-2 w-4 h-4 " + color
     
-    const api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/ownarticles/' : 'http://localhost:3000/ownarticles/';
+    const api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/ownarticles/' : 'http://localhost:3000/ownarticles/';
     const myposts = posts.filter(post => post.category == category).slice(0,5)
    
     return(

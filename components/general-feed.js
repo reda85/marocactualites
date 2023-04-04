@@ -75,7 +75,7 @@ function GeneralFeed ({ posts , ownposts, coviddata, hotposts}) {
   });
   */
   //console.log("plz",coviddata);
-  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/' : 'http://localhost:3000';
+  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/' : 'http://localhost:3000';
   
       return(
         

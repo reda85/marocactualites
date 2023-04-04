@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const PostList = ({ posts , title, isAmp, icon, col } ) => {
-  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/' : 'http://localhost:3000';
+  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/' : 'http://localhost:3000';
   posts = posts.sort((a,b) => (a.created < b.created) ? 1 : ((b.created < a.created) ? -1 : 0)); 
   return (
     <div id="main" >

@@ -30,7 +30,7 @@ export default function Article({ article }) {
 
 Article.getInitialProps = async ({ res, query }) => {
     //console.log("miirde", query.article)
-  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/' : 'http://localhost:3000';
+  let api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/' : 'http://localhost:3000';
   let r = await fetch(`${api_base}/api/articles/${query.article}`);
   //let r = await fetch(`http://localhost:3000/api/feeds/${query.slug}`)
   let article = await r.json();

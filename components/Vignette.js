@@ -11,7 +11,7 @@ export default function Vignette(props) {
     function cat(index,posts) {
         return  'my-2 font-bold ' + colors[categories.indexOf(posts[index].category)] 
     }
-    const api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.vercel.app/ownarticles/' : 'http://localhost:3000/ownarticles/';
+    const api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/ownarticles/' : 'http://localhost:3000/ownarticles/';
    // console.log("api_base", api_base + posts[0].slug)
     return(
         <div className='flex  flex-row' >
