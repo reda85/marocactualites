@@ -82,7 +82,7 @@ export default function Vignette(props) {
         </div>
         <div >
         <Adsense className="my-3 md:hidden "
-     style={{display:'block'}}
+     style={{display:'block', width:'300px'}}
      format="fluid"
      layoutKey="-hs-s+1c-5f+cv"
      client="ca-pub-1131650691837357"
@@ -90,7 +90,7 @@ export default function Vignette(props) {
      </div>
      <div >
         <Adsense className="my-3 hidden md:flex "
-     style={{display:'block'}}
+     style={{display:'block', width:'300px'}}
      format="fluid"
      layoutKey="-h7-2g+1-79+wn"
     client="ca-pub-1131650691837357"

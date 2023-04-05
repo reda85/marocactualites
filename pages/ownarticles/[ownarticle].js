@@ -286,7 +286,7 @@ function Ownarticle({ article, lastposts }) {
                                     <Adsense className="text-center  my-3"
   client="ca-pub-1131650691837357"
   slot="6027117993"
-  style={{ display: 'block' }}
+  style={{ display: 'block', width:'300px' }}
   
   format="auto-relaxed"
 /></div>

@@ -96,7 +96,7 @@ export default function SectionCategorie(props) {
         </div>
         <div className="my-3 md:hidden ">
         <Adsense 
-     style={{display:'block'}}
+     style={{display:'block', width:'300px'}}
      format="fluid"
      layoutKey="-hs-s+1c-5f+cv"
      client="ca-pub-1131650691837357"
@@ -104,7 +104,7 @@ export default function SectionCategorie(props) {
      </div>
      <div className="my-3 hidden md:flex ">
         <Adsense 
-     style={{display:'block'}}
+     style={{display:'block', width:'300px'}}
      format="fluid"
      layoutKey="-h7-2g+1-79+wn"
      client="ca-pub-1131650691837357"
