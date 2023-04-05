@@ -122,7 +122,8 @@ function Ownarticle({ article, lastposts }) {
             });
     } 
 
-    const content = "<div className='break-words mt-8 text-lg  leading-loose text-gray-800  '> "+article[0].article+"</div>"
+    var content = "<div className='break-words mt-8 text-lg  leading-loose text-gray-800  '> "+article[0].article+"</div>"
+    
     if (router.isFallback) {
       return <div>Loading...</div>
     }  

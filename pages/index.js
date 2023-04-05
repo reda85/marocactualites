@@ -10,11 +10,11 @@ import clientPromise from '../util/mongodb'
   
 export const config = { amp: 'nonAmp' }
 
-export default function Index({posts , ownposts, hotposts}) {
+export default function Index({posts , ownposts}) {
   return (
     <Page>
        
-      <GeneralFeed ownposts={ownposts} posts={posts}  hotposts={hotposts}></GeneralFeed>
+    {ownposts &&  <GeneralFeed ownposts={ownposts} posts={posts}  ></GeneralFeed>}
     </Page>
   );
 
@@ -37,9 +37,9 @@ export async function getStaticProps() {
   let posts=[]
   let ownposts=[]
   let hotposts=[]
-  //console.log("imken  here " , filtered )
+  console.log("imken  here " , filtered )
     if (filtered.length > 0 && isConnected) {
-   //   console.log("imken  here2")
+      console.log("imken  here2")
 
       
       
@@ -47,11 +47,11 @@ export async function getStaticProps() {
 
   // Select the users collection from the database
   const now = new Date().getTime()
-  //console.log('noooooooow', now)
+  console.log('noooooooow', now)
    //posts = await db.collection('articles').find({"item.created" : { $gt: now - 86400000 } }).toArray()
    ownposts = await db.collection('ownarticles').find({statut : 'valid'}).sort({created : -1}).toArray()
 //
-hotposts = await db.collection('ownarticles').find({statut : 'valid'}).sort( { reads: -1 } ).toArray()
+//hotposts = await db.collection('ownarticles').find({statut : 'valid'}).sort( { reads: -1 } ).toArray()
 //console.log("hnaaaa", hotposts)
 hotposts = hotposts.slice(0,9)  
 return {
@@ -60,14 +60,16 @@ return {
     ownposts: JSON.parse(JSON.stringify(ownposts)) 
     , 
     
-    hotposts : {hotposts:JSON.parse(JSON.stringify(hotposts))},
+    
     isConnected},
     revalidate: 1
 }; 
-};
+}
+else return {props : {}}
   } catch(e) {
    // console.log(e);
     isConnected = false;
+    return {props : {}}
   }
   
 

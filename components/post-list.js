@@ -31,16 +31,17 @@ const PostList = ({ posts , title, isAmp, icon, col } ) => {
             <div className="flex w-full flex-row">
          
            
-             <div className="relative h-32 aspect-video">
+             <div className="relative h-24 md:h-32 aspect-video">
               <Image src={post.thumbnail} alt="" fill />
               </div> 
             <div className=" mx-4 flex flex-col">
+            { <Link className="text-gray-800" href={`${api_base}/ownarticles/${post.slug}`} >
             <h3 className=" text-xl font-Lora">{post.title}</h3>
             <time>{localdate} </time>
              
              
-             { <Link className="text-gray-800" href={`${api_base}/ownarticles/${post.slug}`} >
-             {post.accroche}
+            
+            <div className=" hidden sm:flex "> {post.accroche} </div>
               </Link> }
             </div>
           </div>
