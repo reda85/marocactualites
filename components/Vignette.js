@@ -94,7 +94,7 @@ export default function Vignette(props) {
     slot="9669767968"></Adsense>
      </div>
      <div >
-     <Adsense 
+     <Adsense className="my-3 hidden md:flex "
      style={{display:'inline-block',width:'970px',height:'250px'}}
      
      layoutKey="-h7-2g+1-79+wn"
