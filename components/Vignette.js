@@ -14,8 +14,9 @@ export default function Vignette(props) {
     const api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/ownarticles/' : 'http://localhost:3000/ownarticles/';
    // console.log("api_base", api_base + posts[0].slug)
     return(
+        <div className='flex  flex-col' >
         <div className='flex  flex-row' >
-            <div className='w-full md:w-2/3' >
+            <div className='w-full ' >
         <div className='   my-3' >
             <div className='py-6 font-bold font-Lora text-black text-3xl'>
             À la une
@@ -80,6 +81,10 @@ export default function Vignette(props) {
             </div>
         </div>
         </div>
+        <div className='hidden md:flex md:w-80'>
+
+        </div>
+        </div>
         <div >
         <Adsense className="my-3 md:hidden "
      style={{display:'block', width:'300px'}}
@@ -89,13 +94,14 @@ export default function Vignette(props) {
     slot="9669767968"></Adsense>
      </div>
      <div >
-        <Adsense className="my-3 hidden md:flex "
-     style={{display:'block', width:'300px'}}
-     format="fluid"
+     <Adsense 
+     style={{display:'inline-block',width:'970px',height:'250px'}}
+     
      layoutKey="-h7-2g+1-79+wn"
-    client="ca-pub-1131650691837357"
-     slot="3487502992"></Adsense>
+     client="ca-pub-1131650691837357"
+     slot="9009472157"></Adsense>
      </div>
+       
         </div>
     )
 }
