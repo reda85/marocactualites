@@ -16,7 +16,7 @@ export default function Vignette(props) {
     return(
         <div className='flex  flex-col' >
         <div className='flex  flex-row' >
-            <div className='w-full md:w-2/3 ' >
+            <div className='w-full md:w-fit ' >
         <div className='   my-3' >
             <div className='py-6 font-bold font-Lora text-black text-3xl'>
             À la une
@@ -82,6 +82,10 @@ export default function Vignette(props) {
         </div>
         </div>
         <div className='hidden md:flex md:w-80'>
+        <Adsense className="adsbygoogle"
+     style={{display:"inline-block",width:"300px",height:"600px"}}
+     client="ca-pub-1131650691837357"
+     slot="3352206399"></Adsense>
 
         </div>
         </div>
