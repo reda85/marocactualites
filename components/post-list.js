@@ -21,7 +21,7 @@ const PostList = ({ posts , title, isAmp, icon, col } ) => {
         
         return (
           <div className="md:w-2/3 w-full" key={i}>
-          <div className="post" style = {{ borderBottom:"2px", borderBottomColor:"black", padding:"15px 15px 15px 15px", paddingRight:"10px", marginLeft:"0px", marginRight:"0px",  }} key={i}>
+          <div className="post" style = {{ borderBottom:"2px", borderBottomColor:"black", paddingRight:"10px", marginLeft:"0px", marginRight:"0px",  }} key={i}>
            
             
             <div  >
@@ -34,9 +34,9 @@ const PostList = ({ posts , title, isAmp, icon, col } ) => {
              <div className="relative h-24 md:h-32 aspect-video">
               <Image src={post.thumbnail} alt="" fill />
               </div> 
-            <div className=" mx-4 flex flex-col">
+            <div className=" mx-2 flex flex-col">
             { <Link className="text-gray-800" href={`${api_base}/ownarticles/${post.slug}`} >
-            <h3 className=" text-xl font-Lora">{post.title}</h3>
+            <h3 className=" sm:text-xl text-base font-Rubik">{post.title}</h3>
             <time>{localdate} </time>
              
              
