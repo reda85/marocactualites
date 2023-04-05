@@ -25,7 +25,21 @@ class MyApp extends App {
 
    // NProgress.configure({ showSpinner: publicRuntimeConfig.NProgressShowSpinner });
     
-    
+   Router.onRouteChangeStart = () => {
+    console.log('onRouteChangeStart triggered');
+   NProgress.start();
+ };
+ 
+
+ 
+ Router.onRouteChangeError = () => {
+    console.log('onRouteChangeError triggered');
+   NProgress.done();
+ };
+
+ Router.events.on('routeChangeComplete', (url) => {gtag.pageview(url) ;
+   NProgress.done();
+ })
 
     const { Component, pageProps } = this.props;
     
