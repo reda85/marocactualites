@@ -3,6 +3,7 @@ import { useAmp } from 'next/amp'
 import Script from 'next/script'
 //import Script from 'next/script'
 import { GA_TRACKING_ID , DATA_CA_ID} from '../lib/gtag'
+import { Adsense } from '@ctrl/react-adsense'
 
 
 function AmpWrap({ ampOnly, nonAmp }) {
@@ -31,15 +32,13 @@ export default class MyDocument extends Document {
       
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-<ins class="adsbygoogle"
-     style={{display:"block"}}
-     data-ad-client="ca-pub-1131650691837357"
-     data-ad-slot="5304254186"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<Adsense
+    
+    client="ca-pub-1131650691837357"
+    slot="5304254186"
+     format="auto"
+     responsive="true"></Adsense>
+
  
         <link
               href="https://fonts.googleapis.com/css2?family=Rubik&display=optionnal"

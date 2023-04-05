@@ -80,20 +80,20 @@ export default function Vignette(props) {
             </div>
         </div>
         </div>
-        <div className="my-3 md:hidden adsbygoogle">
-        <Adsense 
+        <div >
+        <Adsense className="my-3 md:hidden "
      style={{display:'block'}}
      format="fluid"
      layoutKey="-hs-s+1c-5f+cv"
-     data-ad-client="ca-pub-1131650691837357"
+     client="ca-pub-1131650691837357"
     slot="9669767968"></Adsense>
      </div>
-     <div className="my-3 hidden md:flex adsbygoogle">
-        <Adsense 
+     <div >
+        <Adsense className="my-3 hidden md:flex "
      style={{display:'block'}}
      format="fluid"
      layoutKey="-h7-2g+1-79+wn"
-     data-ad-client="ca-pub-1131650691837357"
+    client="ca-pub-1131650691837357"
      slot="3487502992"></Adsense>
      </div>
         </div>

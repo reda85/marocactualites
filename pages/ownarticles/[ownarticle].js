@@ -282,8 +282,8 @@ function Ownarticle({ article, lastposts }) {
 
                                    
                                     </div>
-                                    <div className="text-center adsbygoogle my-3">
-                                    <Adsense
+                                    <div >
+                                    <Adsense className="text-center  my-3"
   client="ca-pub-1131650691837357"
   slot="6027117993"
   style={{ display: 'block' }}
