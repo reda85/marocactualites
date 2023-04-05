@@ -12,9 +12,7 @@ export default function SectionCategorie(props) {
    
     return(
         <div className="my-12">
-            <div>
-                
-            </div>
+           
 
 
 
@@ -24,6 +22,14 @@ export default function SectionCategorie(props) {
                 <div className={cat}></div>
                 <div className="mr-1 w-full h-4 bg-gray-100"></div>
             </div>
+
+
+           <div className="flex flex-row md:flex-col">
+       
+            <div className='w-full md:w-fit ' >
+
+
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-2">
                 <div className="">
                 <Link href={api_base + myposts[0].slug}>
@@ -39,6 +45,7 @@ export default function SectionCategorie(props) {
            </Link>
            <div className='  text-gray-500 text-sm'>{myposts[0].accroche}</div>
         </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className=" grid grid-cols-2 place-content-start md:grid-cols-1 ">
         <Link href={api_base + myposts[1].slug}>
@@ -94,13 +101,23 @@ export default function SectionCategorie(props) {
         </div>
         </div>
         </div>
-        <div className="my-3 md:hidden ">
+        <div className='hidden md:flex md:w-80'>
+        <Adsense className="adsbygoogle"
+     style={{display:"inline-block",width:"300px",height:"600px"}}
+     client="ca-pub-1131650691837357"
+     slot="3352206399"></Adsense>
+
+        </div>
+        </div>
+
+        <div className="my-3 hidden md:w-80 ">
         <Adsense 
      style={{display:'block', width:'300px'}}
      format="fluid"
      layoutKey="-hs-s+1c-5f+cv"
      client="ca-pub-1131650691837357"
     slot="9669767968"></Adsense>
+     </div>
      </div>
      <div className="my-3 hidden md:flex ">
         <Adsense 
