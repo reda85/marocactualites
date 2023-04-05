@@ -110,7 +110,7 @@ export default function SectionCategorie(props) {
         </div>
         </div>
 
-        <div className="my-3 hidden md:w-80 ">
+        <div className="my-3 hidden md:flex md:w-80 ">
         <Adsense 
      style={{display:'block', width:'300px'}}
      format="fluid"
