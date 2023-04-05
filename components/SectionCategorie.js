@@ -104,11 +104,11 @@ export default function SectionCategorie(props) {
      </div>
      <div className="my-3 hidden md:flex ">
         <Adsense 
-     style={{display:'block', width:'300px'}}
-     format="fluid"
+     style={{display:'inline-block',width:'970px',height:'250px'}}
+     
      layoutKey="-h7-2g+1-79+wn"
      client="ca-pub-1131650691837357"
-     slot="3487502992"></Adsense>
+     slot="9009472157"></Adsense>
      </div>
         </div>
     )
