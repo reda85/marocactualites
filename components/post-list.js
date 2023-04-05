@@ -28,13 +28,13 @@ const PostList = ({ posts , title, isAmp, icon, col } ) => {
              
              
             </div>
-            <div className="flex w-full flex-row">
+            <div className="flex w-full flex-col sm:flex-row">
          
            
-             <div className="relative h-24 md:h-32 aspect-video">
+             <div className="relative sm:h-32 h-64 aspect-video">
               <Image src={post.thumbnail} alt="" fill />
               </div> 
-            <div className=" mx-2 flex flex-col">
+            <div className=" mx-2 flex flex-col sm:flex-row">
             { <Link className="text-gray-800" href={`${api_base}/ownarticles/${post.slug}`} >
             <h3 className=" sm:text-xl text-base font-Rubik">{post.title}</h3>
             <time>{localdate} </time>
