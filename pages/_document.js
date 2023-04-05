@@ -32,12 +32,7 @@ export default class MyDocument extends Document {
       
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-<Adsense
-    
-    client="ca-pub-1131650691837357"
-    slot="5304254186"
-     format="auto"
-     responsive="true"></Adsense>
+
 
  
         <link
