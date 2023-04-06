@@ -65,6 +65,14 @@ export default function Vignette(props) {
            <div className='my-2 hover:cursor-pointer hover:opacity-50 font-semibold text-black text-lg'>{posts[2].title}</div>
            </Link>
             </div>
+            <div className="my-3 md:hidden " >
+        <Adsense className="my-3 md:hidden "
+     style={{display:'block'}}
+     format="fluid"
+     layoutKey="-hs-s+1c-5f+cv"
+     client="ca-pub-1131650691837357"
+    slot="9669767968"></Adsense>
+     </div>
             <div>
             <Link href={api_base + posts[3].slug}>
             <div className='relative h-32 hover:cursor-pointer' >
