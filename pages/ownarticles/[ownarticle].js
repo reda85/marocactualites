@@ -181,6 +181,12 @@ function Ownarticle({ article, lastposts }) {
  
                                         </div> 
 										<h1 className='font-Rubik'>{article[0].title}</h1>
+<div className='flex md:hidden md:h-72 md:w-full '>
+                    <Adsense className="adsbygoogle"
+     style={{display:"inline-block",width:"336px",height:"280px"}}
+     client="ca-pub-1131650691837357"
+     slot="9619846246"></Adsense>
+     </div>
                    
                                        
                                         <div className="row">
@@ -203,10 +209,21 @@ function Ownarticle({ article, lastposts }) {
 									</header>
                                    
 									{article[0].thumbnail ? <div className="relative h-96 aspect-auto"><Image src={article[0].thumbnail} alt="image_article" fill priority /></div> : null}
-
+                  <div className='flex md:hidden md:h-72 md:w-full '>
+                    <Adsense className="adsbygoogle"
+     style={{display:"inline-block",width:"336px",height:"280px"}}
+     client="ca-pub-1131650691837357"
+     slot="9619846246"></Adsense>
+     </div>
                   <div className=' underline'  >Par : la Rédaction</div>               
 
 									<h2 className='mt-8 font-Rubik'>{article[0].accroche}</h2>
+                  <div className='flex md:hidden md:h-72 md:w-full '>
+                    <Adsense className="adsbygoogle"
+     style={{display:"inline-block",width:"336px",height:"280px"}}
+     client="ca-pub-1131650691837357"
+     slot="9619846246"></Adsense>
+     </div>
 									{parse(content)} 
                 
   
