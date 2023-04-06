@@ -68,7 +68,7 @@ function Ownarticle({ article, lastposts }) {
                   })   
                   setLoading(false)
                   setIsOpen(false)
-                  router.push(api_base + '/category/drafts')
+                  router.push(api_base + '/drafts')
             })
             .catch((error) => {
                 console.log(error);

@@ -22,13 +22,14 @@ export default async (req, res) => {
   
 //
 try{
-var update = await db.collection('ownarticles').updateOne({ _id: ObjectId(req.body._id) },
+var update = await db.collection('ownarticles').updateOne({ _id: new ObjectId(req.body._id) },
       {
         $set: { statut: 'valid' }})
         res.status(201).json({ success: true, data: update })
     
 }catch(e){
   res.status(400).json({ success: false })
+  console.log(e)
 }    
     }
 
