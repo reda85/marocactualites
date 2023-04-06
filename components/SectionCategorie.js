@@ -112,7 +112,7 @@ export default function SectionCategorie(props) {
        
         </div>
 
-        <div className="my-3 hidden md:flex md:w-96 md:flex-col md:justify-center md:p-4 md:items-center md:sticky md:top-0 ">
+        <div className="my-3 hidden md:flex md:w-96 md:flex-col md:justify-center md:px-4  md:sticky md:top-0 ">
         <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"300px",height:"600px"}}
      client="ca-pub-1131650691837357"
