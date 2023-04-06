@@ -38,7 +38,7 @@ export default function Vignette(props) {
 
             <div>
             <Link href={api_base + posts[1].slug}>
-            <div className='relative hover:cursor-pointer h-32' >
+            <div className='relative aspect-video hover:cursor-pointer h-32' >
             <Image 
   fill src={posts[1].thumbnail} alt=""   
            
@@ -53,7 +53,7 @@ export default function Vignette(props) {
             </div>
             <div>
             <Link href={api_base + posts[2].slug}>
-            <div className='relative hover:cursor-pointer h-32' >
+            <div className='relative aspect-video hover:cursor-pointer h-32' >
             <Image
    fill src={posts[2].thumbnail} alt=""   
            
@@ -75,7 +75,7 @@ export default function Vignette(props) {
      </div>
             <div>
             <Link href={api_base + posts[3].slug}>
-            <div className='relative h-32 hover:cursor-pointer' >
+            <div className='relative h-32 aspect-video hover:cursor-pointer' >
             <Image 
     fill src={posts[3].thumbnail} alt=""   
            
