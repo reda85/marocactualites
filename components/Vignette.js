@@ -89,7 +89,7 @@ export default function Vignette(props) {
             </div>
         </div>
         </div>
-        <div className='hidden md:flex md:flex-col md:justify-center md:px-4  md:w-96 md:sticky md:top-0'>
+        <div className='hidden md:flex  md:px-4  md:w-96 md:sticky md:top-0'>
         <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"300px",height:"600px"}}
      client="ca-pub-1131650691837357"
@@ -106,6 +106,9 @@ export default function Vignette(props) {
     slot="9669767968"></Adsense>
      </div>
      <div className="my-3 hidden md:flex ">
+     <div className='py-6 font-bold font-Lora text-white text-3xl'>
+            À la une
+            </div>
      <Adsense className="my-3 hidden md:flex "
      style={{display:'inline-block',width:'970px',height:'250px'}}
      
