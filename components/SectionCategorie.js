@@ -113,12 +113,11 @@ export default function SectionCategorie(props) {
         </div>
 
         <div className="my-3 hidden md:flex md:w-80 ">
-        <Adsense 
-     style={{display:'block', width:'300px'}}
-     format="fluid"
-     layoutKey="-hs-s+1c-5f+cv"
+        <Adsense className="adsbygoogle"
+     style={{display:"inline-block",width:"300px",height:"600px"}}
      client="ca-pub-1131650691837357"
-    slot="9669767968"></Adsense>
+     slot="3352206399"></Adsense>
+
      </div>
      </div>
      <div className="my-3 md:hidden " >
