@@ -11,6 +11,7 @@ import {AuthProvider} from '../auth'
 import NProgress from 'nprogress';
 
 import { ThemeProvider, theme, ToastProvider } from '@chakra-ui/react'
+import { Toaster } from 'react-hot-toast';
 
 
 
@@ -51,7 +52,7 @@ class MyApp extends App {
         <Layout>
          <AuthProvider>
          <ThemeProvider theme={theme}>
-        <ToastProvider />
+        <Toaster />
           <Component {...pageProps} />
           </ThemeProvider>
           </AuthProvider>

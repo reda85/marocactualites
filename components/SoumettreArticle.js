@@ -1,17 +1,19 @@
 import { Component, createRef } from 'react'
 import axios from 'axios';
-import {Button, HStack, Input, Tag, TagCloseButton, createStandaloneToast , AlertDialog,
+import {Button, HStack, Input, Tag, TagCloseButton , AlertDialog,
   AlertDialogBody,
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogContent,
-  AlertDialogOverlay,} from "@chakra-ui/react"
+  AlertDialogOverlay,
+  useToast,} from "@chakra-ui/react"
 import {firebaseClient} from '../firebaseClient'
 import { FaDownload, FaUpload } from 'react-icons/fa';
 import { DefaultEditor } from 'react-simple-wysiwyg';
+import { toast } from 'react-hot-toast';
 
 
-const toast = createStandaloneToast()
+
 
 function slug(str) {
   str = str.replace(/^\s+|\s+$/g, ''); // trim
@@ -145,13 +147,7 @@ let data = {titre : titre, article : article, accroche: accroche, category: cate
             console.log(`response fetched. ${payload}`);
             console.log(`response fetched.`, response);
 
-            toast({
-              title: "Article soumis avec succès.",
-              
-              status: "success",
-              duration: 9000,
-              isClosable: true,
-            })   
+          toast.success('Article soumis avec succès')
             
             
             this.setState({
@@ -169,13 +165,7 @@ let data = {titre : titre, article : article, accroche: accroche, category: cate
         })
         .catch((error) => {
             console.log(error);
-            toast({
-              title: "Erreur de soumission de l'article.",
-              description : error.message,
-              status: "error",
-              duration: 9000,
-              isClosable: true,
-            })   
+           toast.error("Erreur de soumission de l'article")
             
             
             this.setState({
