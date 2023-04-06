@@ -24,7 +24,7 @@ export default function SectionCategorie(props) {
             </div>
 
 
-           <div className="flex flex-row md:flex-col">
+           <div className="flex flex-row">
        
             <div className='w-full md:w-fit ' >
 
