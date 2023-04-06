@@ -22,7 +22,7 @@ export default async (req, res) => {
   
 //
 try{
-var d = await db.collection('ownarticles').deleteOne({ _id: ObjectId(req.body._id) }
+var d = await db.collection('ownarticles').deleteOne({ _id: new ObjectId(req.body._id) }
       )
       res.status(201).json({ success: true, data: d })
 }
