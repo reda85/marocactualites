@@ -49,11 +49,11 @@ export default class MyDocument extends Document {
                 />
  
         <link
-              href="https://fonts.googleapis.com/css2?family=Rubik&display=optionnal"
+              href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
               rel="stylesheet"
             />
              <link
-              href="https://fonts.googleapis.com/css2?family=Lora&display=optionnal"
+              href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
               rel="stylesheet"
             />
         
