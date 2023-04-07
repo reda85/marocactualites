@@ -230,7 +230,7 @@ function Ownarticle({ article, lastposts }) {
   
 								{article[0].keywords ? <HStack> <Icon as= {FaTags} />
   <span>&nbsp;</span> 
-  <div className='font-bold'  >Mots-clés : { article[0].keywords.map(keyword => keyword + ',')}</div>	</HStack> : null }
+  <div className='font-bold my-6'  >Mots-clés : { article[0].keywords.map(keyword => keyword + ',')}</div>	</HStack> : null }
                 
               	</section>
 
