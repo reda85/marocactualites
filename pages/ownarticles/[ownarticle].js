@@ -311,7 +311,13 @@ function Ownarticle({ article, lastposts }) {
                                     <LastArticles Lastposts={lastposts}></LastArticles>
       </div>
       <div style={{marginTop : "30px"}} className="col-4 col-12-small">
-     
+      <div className='hidden md:flex md:flex-col px-4  md:w-96 md:sticky md:top-0'>
+        <Adsense className="adsbygoogle"
+     style={{display:"inline-block",width:"300px",height:"600px"}}
+     client="ca-pub-1131650691837357"
+     slot="3352206399"></Adsense>
+
+        </div>
       </div>
       </div>
       
