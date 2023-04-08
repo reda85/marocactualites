@@ -48,13 +48,10 @@ export default class MyDocument extends Document {
                   }}
                 />
  
-        <link
-              href="https://fonts.googleapis.com/css2?family=Sora&display=swap"
-              rel="stylesheet"
-            />
+       
             
         
-        <body className='font-Sora text-medium antialiased'>
+        <body >
           
           <div>
       

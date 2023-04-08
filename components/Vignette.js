@@ -19,7 +19,7 @@ export default function Vignette(props) {
             <div className='w-full md:w-fit ' >
         <div className='   my-3' >
             <div className='py-6 font-bold bg-gradient-to-r from-red-600  to-green-400 inline-block text-transparent bg-clip-text  text-3xl'>
-            À la une
+            À la Une
             </div>
             <Link href={api_base + posts[0].slug}>
             <div className='relative w-full aspect-video hover:cursor-pointer' >

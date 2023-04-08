@@ -13,7 +13,10 @@ import NProgress from 'nprogress';
 import { ThemeProvider, theme, ToastProvider } from '@chakra-ui/react'
 import { Toaster } from 'react-hot-toast';
 
+import { Sora } from 'next/font/google'
 
+// If loading a variable font, you don't need to specify the font weight
+const sora = Sora({ subsets: ['latin'] })
 
 
 
@@ -53,7 +56,9 @@ class MyApp extends App {
          <AuthProvider>
          <ThemeProvider theme={theme}>
         <Toaster />
+        <main className={sora.className}>
           <Component {...pageProps} />
+          </main>
           </ThemeProvider>
           </AuthProvider>
         </Layout>
