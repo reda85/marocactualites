@@ -70,7 +70,7 @@ export default function Vignette(props) {
            <div className={cat(2,posts)}>{posts[2].category.toUpperCase()}</div>
            <Link href={api_base + posts[2].slug}>
            
-           <div className='md:my-2 mx-2 md:mx-0  hover:cursor-pointer hover:opacity-50 font-semibold text-black text-base md:text-lg'>{posts[1].title}</div>
+           <div className='md:my-2 mx-2 md:mx-0  hover:cursor-pointer hover:opacity-50 font-semibold text-black text-base md:text-lg'>{posts[2].title}</div>
            </Link>
            </div>
             </div>
@@ -97,7 +97,7 @@ export default function Vignette(props) {
            <div className={cat(3,posts)}>{posts[3].category.toUpperCase()}</div>
            <Link href={api_base + posts[3].slug}>
            
-           <div className='md:my-2 mx-2 md:mx-0  hover:cursor-pointer hover:opacity-50 font-semibold text-black text-base md:text-lg'>{posts[1].title}</div>
+           <div className='md:my-2 mx-2 md:mx-0  hover:cursor-pointer hover:opacity-50 font-semibold text-black text-base md:text-lg'>{posts[3].title}</div>
            </Link>
            </div>
             </div>
