@@ -41,7 +41,7 @@ const PostList = ({ posts , title, isAmp, icon, col } ) => {
              
              
             
-            <div className=" hidden sm:flex "> {post.accroche} </div>
+            <div className=" text-gray-800 hidden sm:flex "> {post.accroche} </div>
               </Link> }
             </div>
           </div>
