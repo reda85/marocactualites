@@ -11,7 +11,7 @@ const LastArticles = ({ Lastposts  } ) => {
 
 
 <div style={{marginTop : "60px"}}>
-<h2 style={{color: "grey"}}> Autres articles publiés </h2>
+<h2 className="font-Sora text-gray-500"> Autres articles publiés </h2>
 
 <div className="posts">
     {Lastposts.map((post,i) => {
