@@ -74,7 +74,7 @@ export default function SectionCategorie(props) {
            </Link>
         </div>
         <div className="my-3 md:hidden " >
-        <Adsense className="my-3 md:hidden "
+        <Adsense 
      style={{display:'block'}}
      format="fluid"
      layoutKey="-hs-s+1c-5f+cv"
@@ -130,7 +130,7 @@ export default function SectionCategorie(props) {
      </div>
      </div>
      <div className="my-3 md:hidden " >
-        <Adsense className="my-3 md:hidden "
+        <Adsense 
      style={{display:'block'}}
      format="fluid"
      layoutKey="-hs-s+1c-5f+cv"

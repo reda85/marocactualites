@@ -75,7 +75,7 @@ export default function Vignette(props) {
            </div>
             </div>
             <div className="my-3 md:hidden " >
-        <Adsense className="my-3 md:hidden "
+        <Adsense 
      style={{display:'block'}}
      format="fluid"
      layoutKey="-hs-s+1c-5f+cv"
@@ -120,7 +120,7 @@ export default function Vignette(props) {
      slot="9009472157"></Adsense>
      </div>
         <div className="my-3 md:hidden " >
-        <Adsense className="my-3 md:hidden "
+        <Adsense 
      style={{display:'block'}}
      format="fluid"
      layoutKey="-hs-s+1c-5f+cv"
