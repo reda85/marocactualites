@@ -46,7 +46,7 @@ export default function SectionCategorie(props) {
            <div className='  text-gray-500 text-sm'>{myposts[0].accroche}</div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid my-6 grid-cols-1 md:grid-cols-2 gap-8">
         <div className=" grid grid-cols-2 place-content-start md:grid-cols-1 ">
         <Link href={api_base + myposts[1].slug}>
 <div className='relative hover:cursor-pointer  mr-2 md:w-full aspect-video' >
