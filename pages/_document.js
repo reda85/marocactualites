@@ -17,11 +17,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="fr">
         <Head />
-        <Script
-  async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-  strategy="afterInteractive"
-/>
+        
 <script type="text/javascript" dangerouslySetInnerHTML={{__html: `
   const configSFBXAppConsent = {
     appKey: '475a79d8-ca2c-4bbf-8ca3-290df67295f6'

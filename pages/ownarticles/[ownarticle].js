@@ -172,7 +172,7 @@ function Ownarticle({ article, lastposts }) {
 <section>
 									<header className="main">
                                     <div className="row "> 
-                                        <Text className=' font-Sora font-bold' m="0"  color='green'>{article[0].category}</Text>
+                                        <Text className='  font-bold' m="0"  color='green'>{article[0].category}</Text>
                                         <span> </span>
                                         <Text m="0" p="0" color='red'> | </Text>
                                         <Text as="i"> {format(article[0].created, " cccc dd MMMM yyyy 'à' HH:mm", {
@@ -180,7 +180,7 @@ function Ownarticle({ article, lastposts }) {
 })}</Text>
  
                                         </div> 
-										<h1 className='font-Sora'>{article[0].title}</h1>
+										<h1 className=''>{article[0].title}</h1>
 <div className='flex md:hidden md:h-72 md:w-full '>
                     <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"336px",height:"280px"}}
@@ -217,7 +217,7 @@ function Ownarticle({ article, lastposts }) {
      </div>
                   <div className=' underline'  >Par : la Rédaction</div>               
 
-									<h2 className='mt-8 font-Sora'>{article[0].accroche}</h2>
+									<h2 className='mt-8 '>{article[0].accroche}</h2>
                   <div className='flex md:hidden md:h-72 md:w-full '>
                     <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"336px",height:"280px"}}
