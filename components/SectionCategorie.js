@@ -25,7 +25,7 @@ export default function SectionCategorie(props) {
 
 
            <div className="flex flex-row">
-       
+           <div className="flex flex-col">
             <div className='w-full md:w-fit ' >
 
 
@@ -111,6 +111,15 @@ export default function SectionCategorie(props) {
         </div>
        
         </div>
+        <div className=" hidden md:flex ">
+     <Adsense className=" hidden md:flex "
+     style={{display:'inline-block',width:'970px',height:'250px'}}
+     
+     layoutKey="-h7-2g+1-79+wn"
+     client="ca-pub-1131650691837357"
+     slot="9009472157"></Adsense>
+     </div>
+     </div>
 
         <div className="my-3 hidden md:flex h-full md:w-96 md:flex-col md:items-center md:px-4  md:sticky md:top-0 ">
         <Adsense className="adsbygoogle"
@@ -128,14 +137,7 @@ export default function SectionCategorie(props) {
      client="ca-pub-1131650691837357"
     slot="9669767968"></Adsense>
      </div>
-     <div className=" hidden md:flex ">
-     <Adsense className=" hidden md:flex "
-     style={{display:'inline-block',width:'970px',height:'250px'}}
      
-     layoutKey="-h7-2g+1-79+wn"
-     client="ca-pub-1131650691837357"
-     slot="9009472157"></Adsense>
-     </div>
         </div>
     )
 }

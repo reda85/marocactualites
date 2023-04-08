@@ -111,6 +111,14 @@ export default function Vignette(props) {
 
         </div>
         </div>
+        <div className="my-3 hidden md:flex ">
+     <Adsense className="my-3 hidden md:flex "
+     style={{display:'inline-block',width:'970px',height:'250px'}}
+     
+     layoutKey="-h7-2g+1-79+wn"
+     client="ca-pub-1131650691837357"
+     slot="9009472157"></Adsense>
+     </div>
         <div className="my-3 md:hidden " >
         <Adsense className="my-3 md:hidden "
      style={{display:'block'}}
@@ -119,14 +127,7 @@ export default function Vignette(props) {
      client="ca-pub-1131650691837357"
     slot="9669767968"></Adsense>
      </div>
-     <div className="my-3 hidden md:flex ">
-     <Adsense className="my-3 hidden md:flex "
-     style={{display:'inline-block',width:'970px',height:'250px'}}
-     
-     layoutKey="-h7-2g+1-79+wn"
-     client="ca-pub-1131650691837357"
-     slot="9009472157"></Adsense>
-     </div>
+    
        
         </div>
     )
