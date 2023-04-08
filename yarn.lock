@@ -353,7 +353,7 @@
     "@chakra-ui/react-types" "2.0.7"
     "@chakra-ui/react-use-callback-ref" "2.0.7"
     "@chakra-ui/react-use-event-listener" "2.0.7"
-    "@chakra-ui/react-use-Interval" "2.0.5"
+    "@chakra-ui/react-use-interval" "2.0.5"
     "@chakra-ui/react-use-merge-refs" "2.0.7"
     "@chakra-ui/react-use-safe-layout-effect" "2.0.5"
     "@chakra-ui/react-use-update-effect" "2.0.7"
@@ -518,9 +518,9 @@
   dependencies:
     "@chakra-ui/react-use-event-listener" "2.0.7"
 
-"@chakra-ui/react-use-Interval@2.0.5":
+"@chakra-ui/react-use-interval@2.0.5":
   version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/react-use-Interval/-/react-use-Interval-2.0.5.tgz#c1a0043bf188b19b790a27668f4e860391335a60"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/react-use-interval/-/react-use-interval-2.0.5.tgz#c1a0043bf188b19b790a27668f4e860391335a60"
   integrity sha512-1nbdwMi2K87V6p5f5AseOKif2CkldLaJlq1TOqaPRwb7v3aU9rltBtYdf+fIyuHSToNJUV6wd9budCFdLCl3Fg==
   dependencies:
     "@chakra-ui/react-use-callback-ref" "2.0.7"
