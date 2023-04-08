@@ -175,7 +175,7 @@ function Ownarticle({ article, lastposts }) {
                                         <Text className=' font-Sora font-bold' m="0"  color='green'>{article[0].category}</Text>
                                         <span> </span>
                                         <Text m="0" p="0" color='red'> | </Text>
-                                        <Text as="i">Publié {format(article[0].created, "'le' cccc dd MMMM yyyy 'à' HH:mm", {
+                                        <Text as="i"> {format(article[0].created, " cccc dd MMMM yyyy 'à' HH:mm", {
   locale: fr
 })}</Text>
  

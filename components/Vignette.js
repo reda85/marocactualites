@@ -18,7 +18,7 @@ export default function Vignette(props) {
         <div className='flex  flex-row' >
             <div className='w-full md:w-fit ' >
         <div className='   my-3' >
-            <div className='py-6 font-bold  text-black text-3xl'>
+            <div className='py-6 font-bold bg-gradient-to-r from-red-600  to-green-400 inline-block text-transparent bg-clip-text  text-3xl'>
             À la une
             </div>
             <Link href={api_base + posts[0].slug}>
