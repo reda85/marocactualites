@@ -47,7 +47,7 @@ export default function Vignette(props) {
             </Link>
            </div>
           
-           <div className='w-1/2 flex flex-col'> 
+           <div className='w-1/2 md:w-full flex flex-col'> 
            <div className={cat(1,posts)}>{posts[1].category.toUpperCase()}</div>
            <Link href={api_base + posts[1].slug}>
            
@@ -66,7 +66,7 @@ export default function Vignette(props) {
             </Link>
            </div>
           
-           <div className='w-1/2 flex flex-col'> 
+           <div className='w-1/2 md:w-full flex flex-col'> 
            <div className={cat(2,posts)}>{posts[2].category.toUpperCase()}</div>
            <Link href={api_base + posts[2].slug}>
            
@@ -93,7 +93,7 @@ export default function Vignette(props) {
             </Link>
            </div>
           
-           <div className='w-1/2 flex flex-col'> 
+           <div className='w-1/2 md:w-full flex flex-col'> 
            <div className={cat(3,posts)}>{posts[3].category.toUpperCase()}</div>
            <Link href={api_base + posts[3].slug}>
            
