@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     
     extend: {fontFamily: {
-      "Rubik": ['Rubik', ...defaultTheme.fontFamily.sans],
-      "Lora": ['Lora', ...defaultTheme.fontFamily.sans],
+      "Sora": ['Sora', ...defaultTheme.fontFamily.sans],
+      
      
     },},
   },

@@ -49,15 +49,12 @@ export default class MyDocument extends Document {
                 />
  
         <link
-              href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+              href="https://fonts.googleapis.com/css2?family=Sora&display=swap"
               rel="stylesheet"
             />
-             <link
-              href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
-              rel="stylesheet"
-            />
+            
         
-        <body className='font-Rubik text-medium antialiased'>
+        <body className='font-Sora text-medium antialiased'>
           
           <div>
       

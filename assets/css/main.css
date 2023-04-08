@@ -1,5 +1,5 @@
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+
 /*
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
@@ -1105,7 +1105,7 @@ input[type="radio"] {
   input[type="radio"] + label {
     text-decoration: none;
     color: #7f888f;
-    cursor: pointer;
+    cursor: poInter;
     display: inline-block;
     font-size: 1em;
     font-weight: 400;
@@ -2148,7 +2148,7 @@ table {
   #menu ul a, #menu ul span {
     border-bottom: 0;
     color: inherit;
-    cursor: pointer;
+    cursor: poInter;
     display: block;
     font-size: 0.9em;
     padding: 0.625em 0; }

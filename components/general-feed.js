@@ -83,12 +83,10 @@ function GeneralFeed ({ posts , ownposts, coviddata, hotposts}) {
 
 
 
-<div className="row" style={{paddingLeft:"20px",}}>
-
-            </div>
 
 
-<div className="row" style = {{display:"flex" , flexDirection:'row' ,justifyContent:"space-between"} }>
+
+            <div className="flex flex-row xl:px-36 items-center justify-center">
   <div >
 
 

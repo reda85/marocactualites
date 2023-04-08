@@ -33,7 +33,7 @@ function PolitiqueConfidentialite () {
   
  En utilisant notre site, vous consentez à l&lsquo;utilisation des Cookies précités. Vous pouvez toutefois choisir à tout moment de désactiver tout ou une partie de ces Cookies, à l&lsquo;exception des Cookies techniques nécessaires au fonctionnement du site comme indiqué ci-dessus. Votre navigateur peut également être paramétré pour vous signaler les Cookies qui sont déposés dans votre terminal et vous demander de les accepter ou pas.
   
- <strong>1. Refuser un Cookie par l&lsquo;intermédiaire de votre logiciel de navigation</strong>
+ <strong>1. Refuser un Cookie par l&lsquo;Intermédiaire de votre logiciel de navigation</strong>
   
  <p>Vous pouvez à tout moment choisir de désactiver tout ou partie des Cookies. Votre navigateur peut également être paramétré pour vous signaler les Cookies déposés dans votre terminal et vous demander de les accepter ou non (au cas par cas ou en totalité). Nous vous rappelons toutefois que la désactivation de tous les Cookies vous empêchera d’utiliser notre site dans des conditions normales, à l’exception des fonctions basiques.</p>
   
@@ -60,7 +60,7 @@ function PolitiqueConfidentialite () {
  <li>http://www.krux.com/krux_privacy/consumer_choice/</li>
  <li>http://www.xiti.com/fr/optout.aspx</li>
  </ul>
- <p><strong>Attention,</strong> ces Cookies permettent de mesurer le trafic ou l’audience, associé à notre site internet, aux pages visitées et aux interactions réalisées sur le Site lors de votre visite. Les désactiver empêche donc toute collecte d’informations relatives à votre navigation sur notre Site et donc la proposition de contenus éditoriaux adaptés en fonction de votre navigation.</p>
+ <p><strong>Attention,</strong> ces Cookies permettent de mesurer le trafic ou l’audience, associé à notre site Internet, aux pages visitées et aux Interactions réalisées sur le Site lors de votre visite. Les désactiver empêche donc toute collecte d’informations relatives à votre navigation sur notre Site et donc la proposition de contenus éditoriaux adaptés en fonction de votre navigation.</p>
   
   
  <p><strong>3. Refuser un Cookie publicitaire</strong> </p>
@@ -86,7 +86,7 @@ function PolitiqueConfidentialite () {
   
  <strong>4. Refuser un Cookie émis par un réseau social</strong>  
   
- Si vous ne souhaitez pas que notre site enregistre des Cookies dans votre navigateur à cette fin, vous pouvez cliquer sur les liens de désactivation suivants qui enregistreront au sein de votre navigateur un Cookie ayant pour unique objet de neutraliser l’utilisation des autres cookies provenant d’un même émetteur. Désactiver ces Cookies empêchera donc toute interaction avec le ou les réseaux sociaux concernés :
+ Si vous ne souhaitez pas que notre site enregistre des Cookies dans votre navigateur à cette fin, vous pouvez cliquer sur les liens de désactivation suivants qui enregistreront au sein de votre navigateur un Cookie ayant pour unique objet de neutraliser l’utilisation des autres cookies provenant d’un même émetteur. Désactiver ces Cookies empêchera donc toute Interaction avec le ou les réseaux sociaux concernés :
  <ul>
  <li>FACEBOOK : https://www.facebook.com/help/360595310676682/</li>
  <li>TWITTER : https://support.twitter.com/articles/20171379-twitter-prend-en-charge-la-desactivation-du-suivi-dnt#</li>

@@ -18,11 +18,11 @@ export default function Vignette(props) {
         <div className='flex  flex-row' >
             <div className='w-full md:w-fit ' >
         <div className='   my-3' >
-            <div className='py-6 font-bold font-Lora text-black text-3xl'>
+            <div className='py-6 font-bold  text-black text-3xl'>
             À la une
             </div>
             <Link href={api_base + posts[0].slug}>
-            <div className='relative w-full aspect-video hover:cursor-pointer' >
+            <div className='relative w-full aspect-video hover:cursor-poInter' >
             <Image fill priority
      src={posts[0].thumbnail} alt=""   
            
@@ -30,7 +30,7 @@ export default function Vignette(props) {
            </div>
            </Link>
            <Link href={api_base + posts[0].slug}>
-           <div className='my-4 hover:cursor-pointer hover:opacity-50 font-semibold text-black text-2xl'>{posts[0].title}</div>
+           <div className='my-4 hover:cursor-poInter hover:opacity-50 font-semibold text-black text-2xl'>{posts[0].title}</div>
            </Link>
         </div>
          
@@ -38,7 +38,7 @@ export default function Vignette(props) {
 
             <div>
             <Link href={api_base + posts[1].slug}>
-            <div className='relative hover:cursor-pointer h-32' >
+            <div className='relative hover:cursor-poInter h-32' >
             <Image 
   fill src={posts[1].thumbnail} alt=""   
            
@@ -48,12 +48,12 @@ export default function Vignette(props) {
            <div className={cat(1,posts)}>{posts[1].category.toUpperCase()}</div>
            <Link href={api_base + posts[1].slug}>
            
-           <div className='my-2 hover:cursor-pointer hover:opacity-50 font-semibold text-black text-lg'>{posts[1].title}</div>
+           <div className='my-2 hover:cursor-poInter hover:opacity-50 font-semibold text-black text-lg'>{posts[1].title}</div>
            </Link>
             </div>
             <div>
             <Link href={api_base + posts[2].slug}>
-            <div className='relative hover:cursor-pointer h-32' >
+            <div className='relative hover:cursor-poInter h-32' >
             <Image
    fill src={posts[2].thumbnail} alt=""   
            
@@ -62,7 +62,7 @@ export default function Vignette(props) {
            </Link>
            <div className={cat(2,posts)}>{posts[2].category.toUpperCase()}</div>
            <Link href={api_base + posts[2].slug}>
-           <div className='my-2 hover:cursor-pointer hover:opacity-50 font-semibold text-black text-lg'>{posts[2].title}</div>
+           <div className='my-2 hover:cursor-poInter hover:opacity-50 font-semibold text-black text-lg'>{posts[2].title}</div>
            </Link>
             </div>
             <div className="my-3 md:hidden " >
@@ -75,7 +75,7 @@ export default function Vignette(props) {
      </div>
             <div>
             <Link href={api_base + posts[3].slug}>
-            <div className='relative h-32 hover:cursor-pointer' >
+            <div className='relative h-32 hover:cursor-poInter' >
             <Image 
     fill src={posts[3].thumbnail} alt=""   
            
@@ -84,7 +84,7 @@ export default function Vignette(props) {
            </Link>
            <div className={cat(3,posts)}>{posts[3].category.toUpperCase()}</div>
            <Link href={api_base + posts[3].slug}>
-           <div className='my-2 hover:cursor-pointer hover:opacity-50 font-semibold text-black text-lg'  >{posts[3].title}</div>
+           <div className='my-2 hover:cursor-poInter hover:opacity-50 font-semibold text-black text-lg'  >{posts[3].title}</div>
            </Link>
             </div>
         </div>

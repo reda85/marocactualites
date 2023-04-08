@@ -14,7 +14,7 @@ www.marocactualites.com les informations suivantes :</p>
 
 <strong>1. Présentation et principe :</strong>
 
-<p>Est désigné ci-après : Utilisateur, tout internaute se connectant et utilisant le
+<p>Est désigné ci-après : Utilisateur, tout Internaute se connectant et utilisant le
 site susnommé : www.marocactualites.com
 Le site www.marocactualites.com regroupe un ensemble de services, dans
 l’état, mis à la disposition des utilisateurs. Le site www.marocactualites.com
@@ -26,11 +26,11 @@ responsabilité exclusive.</p>
 <strong>2. Accessibilité :</strong>
 
 <p>Le site www.marocactualites.com est par principe accessible aux utilisateurs
-24/24h, 7/7j, sauf interruption, programmée ou non, pour les besoins de sa
+24/24h, 7/7j, sauf Interruption, programmée ou non, pour les besoins de sa
 maintenance ou en cas de force majeure. En cas d’impossibilité d’accès au
 service, www.marocactualites.com s’engage à faire son maximum afin de
 rétablir l’accès au service et s’efforcera alors de communiquer préalablement
-aux utilisateurs les dates et heures de l’intervention.</p>
+aux utilisateurs les dates et heures de l’Intervention.</p>
 
 <strong>3. Liens hypertextes et cookies :</strong>
 
@@ -38,7 +38,7 @@ aux utilisateurs les dates et heures de l’intervention.</p>
 hypertextes vers d’autres sites partenaires.
 L’utilisateur est informé que lors de ses visites sur le site
 www.marocactualites.com, un ou des cookies sont susceptibles de s’installer
-sur son ordinateur par l’intermédiaire de son logiciel de navigation. Un cookie
+sur son ordinateur par l’Intermédiaire de son logiciel de navigation. Un cookie
 est un bloc de données qui ne permet pas d’identifier l’utilisateur, mais qui
 
 enregistre des informations relatives à la navigation de celui-ci sur le site.

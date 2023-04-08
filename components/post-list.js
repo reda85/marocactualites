@@ -36,7 +36,7 @@ const PostList = ({ posts , title, isAmp, icon, col } ) => {
               </div> 
             <div className=" mx-2 flex flex-col sm:flex-row">
             { <Link className="text-gray-800" href={`${api_base}/ownarticles/${post.slug}`} >
-            <h3 className=" sm:text-xl text-base font-Rubik">{post.title}</h3>
+            <h3 className=" sm:text-xl text-base font-Sora">{post.title}</h3>
             <time>{localdate} </time>
              
              
