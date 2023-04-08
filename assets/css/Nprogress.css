@@ -1,5 +1,5 @@
 #nprogress {
-    poInter-events: none;
+    pointer-events: none;
   }
   
   #nprogress .bar {

@@ -33,7 +33,7 @@ export default function SectionCategorie(props) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-2">
                 <div className="">
                 <Link href={api_base + myposts[0].slug}>
-<div className='relative hover:cursor-poInter  w-full aspect-video ' >
+<div className='relative hover:cursor-pointer  w-full aspect-video ' >
             <Image fill priority
      src={myposts[0].thumbnail} alt=""   
            
@@ -41,7 +41,7 @@ export default function SectionCategorie(props) {
            </div>
            </Link>
            <Link href={api_base + myposts[0].slug}>
-           <div className='my-4 font-semibold text-black text-xl hover:cursor-poInter hover:opacity-50'>{myposts[0].title}</div>
+           <div className='my-4 font-semibold text-black text-xl hover:cursor-pointer hover:opacity-50'>{myposts[0].title}</div>
            </Link>
            <div className='  text-gray-500 text-sm'>{myposts[0].accroche}</div>
         </div>
@@ -49,7 +49,7 @@ export default function SectionCategorie(props) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className=" grid grid-cols-2 place-content-start md:grid-cols-1 ">
         <Link href={api_base + myposts[1].slug}>
-<div className='relative hover:cursor-poInter  mr-2 md:w-full aspect-video' >
+<div className='relative hover:cursor-pointer  mr-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[1].thumbnail} alt=""   
            
@@ -57,12 +57,12 @@ export default function SectionCategorie(props) {
            </div>
            </Link>
            <Link href={api_base + myposts[1].slug}>
-           <div className='  font-semibold hover:cursor-poInter hover:opacity-50 text-black text-base'>{myposts[1].title}</div>
+           <div className='  font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[1].title}</div>
            </Link>
         </div>
         <div className="grid grid-cols-2 place-content-start md:grid-cols-1">
         <Link href={api_base + myposts[2].slug}>
-<div className='relative hover:cursor-poInter  mr-2 md:w-full aspect-video' >
+<div className='relative hover:cursor-pointer  mr-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[2].thumbnail} alt=""   
            
@@ -70,7 +70,7 @@ export default function SectionCategorie(props) {
            </div>
            </Link>
            <Link href={api_base + myposts[2].slug}>
-           <div className=' font-semibold hover:cursor-poInter hover:opacity-50 text-black text-base'>{myposts[2].title}</div>
+           <div className=' font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[2].title}</div>
            </Link>
         </div>
         <div className="my-3 md:hidden " >
@@ -83,7 +83,7 @@ export default function SectionCategorie(props) {
      </div>
         <div className="grid place-content-start grid-cols-2 md:grid-cols-1">
         <Link href={api_base + myposts[3].slug}>
-<div className='relative hover:cursor-poInter  mr-2 md:w-full aspect-video' >
+<div className='relative hover:cursor-pointer  mr-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[3].thumbnail} alt=""   
            
@@ -91,12 +91,12 @@ export default function SectionCategorie(props) {
            </div>
            </Link>
            <Link href={api_base + myposts[3].slug}>
-           <div className=' font-semibold hover:cursor-poInter hover:opacity-50 text-black text-base'>{myposts[3].title}</div>
+           <div className=' font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[3].title}</div>
            </Link>
         </div>
         <div className="grid grid-cols-2 place-content-start md:grid-cols-1">
         <Link href={api_base + myposts[4].slug}>
-<div className='relative hover:cursor-poInter  mr-2 md:w-full aspect-video' >
+<div className='relative hover:cursor-pointer  mr-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[4].thumbnail} alt=""   
            
@@ -104,7 +104,7 @@ export default function SectionCategorie(props) {
            </div>
            </Link>
            <Link href={api_base + myposts[4].slug}>
-           <div className=' font-semibold hover:cursor-poInter hover:opacity-50 text-black text-base'>{myposts[4].title}</div>
+           <div className=' font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[4].title}</div>
         </Link>
         </div>
         </div>
