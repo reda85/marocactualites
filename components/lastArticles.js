@@ -11,7 +11,7 @@ const LastArticles = ({ Lastposts  } ) => {
 
 
 <div style={{marginTop : "60px"}}>
-<h2 className=" text-gray-500"> Autres articles publiés </h2>
+<div className=" text-2xl mb-16 text-gray-500"> Autres articles publiés </div>
 
 <div className="posts">
     {Lastposts.map((post,i) => {
@@ -21,7 +21,7 @@ const LastArticles = ({ Lastposts  } ) => {
             {locale: fr} // Pass the locale as an option
           )
         return(<article key={i}>
-            <a style={{marginBottom : "10px", paddingBottom: '0px'}} href={`${api_base}/ownarticles/${post.slug}`} className="image"><h3 className="">{post.title}</h3></a>
+            <a style={{marginBottom : "10px", paddingBottom: '0px'}} href={`${api_base}/ownarticles/${post.slug}`} className="image"><span className="text-black text-lg">{post.title}</span></a>
            <p style={{marginTop : "0px", paddingTop: '0px'}} className="icon solid fa-clock"> Il y a {dateresult}</p> 
             <p>{striptags(post.accroche).slice(0,100)} ...</p>
           

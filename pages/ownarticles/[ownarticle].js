@@ -180,7 +180,7 @@ function Ownarticle({ article, lastposts }) {
 })}</Text>
  
                                         </div> 
-										<h1 className=''>{article[0].title}</h1>
+										<div className='mt-10 mb-16 text-black font-semibold text-5xl'>{article[0].title}</div>
 <div className='flex md:hidden md:h-72 md:w-full '>
                     <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"336px",height:"280px"}}
@@ -217,7 +217,7 @@ function Ownarticle({ article, lastposts }) {
      </div>
                   <div className=' underline'  >Par : la Rédaction</div>               
 
-									<h2 className='mt-8 '>{article[0].accroche}</h2>
+									<div className='mt-8 text-3xl text-black '>{article[0].accroche}</div>
                   <div className='flex md:hidden md:h-72 md:w-full '>
                     <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"336px",height:"280px"}}
