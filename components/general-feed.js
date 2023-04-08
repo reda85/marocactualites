@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Vignette from './Vignette'
 import SectionCategorie from './SectionCategorie'
+import { Adsense } from '@ctrl/react-adsense'
 export const config = { amp: 'nonAmp' }
 
  
@@ -87,9 +88,24 @@ function GeneralFeed ({ posts , ownposts, coviddata, hotposts}) {
 
 
             <div className="flex flex-row xl:px-36 items-center justify-center">
-  <div >
+  <div className='flex flex-col' >
 
-
+  <div className=" hidden md:flex ">
+     <Adsense className=" hidden md:flex "
+     style={{display:'inline-block',width:'970px',height:'250px'}}
+     
+     layoutKey="-h7-2g+1-79+wn"
+     client="ca-pub-1131650691837357"
+     slot="9009472157"></Adsense>
+     </div>
+     <div className="my-3 md:hidden " >
+        <Adsense 
+     style={{display:'block'}}
+     format="fluid"
+     layoutKey="-hs-s+1c-5f+cv"
+     client="ca-pub-1131650691837357"
+    slot="9669767968"></Adsense>
+     </div>
         <Vignette posts={ownposts} />
         <SectionCategorie posts={ownposts} category='Sport' color='bg-green-500' />
         <SectionCategorie posts={ownposts} category='politique' color='bg-orange-500' />
