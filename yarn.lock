@@ -928,9 +928,9 @@
   dependencies:
     postcss-value-parser "^4.2.0"
 
-"@csstools/postcss-gradients-Interpolation-method@^3.0.1":
+"@csstools/postcss-gradients-interpolation-method@^3.0.1":
   version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@csstools/postcss-gradients-Interpolation-method/-/postcss-gradients-Interpolation-method-3.0.1.tgz#e5237dd765f951c1f4b113d29c4bd2438db5dc33"
+  resolved "https://registry.yarnpkg.com/@csstools/postcss-gradients-interpolation-method/-/postcss-gradients-interpolation-method-3.0.1.tgz#e5237dd765f951c1f4b113d29c4bd2438db5dc33"
   integrity sha512-sCfFSzL5HRb/GhrGuTEi8IRrxp2bUeKakyXvuXzuBBxL0L2X8kZAljQwkuRkd0W/wIWTsQG/E72REb5XMmRfrA==
   dependencies:
     "@csstools/css-color-parser" "^1.1.0"
@@ -1269,9 +1269,9 @@
     "@firebase/util" "1.9.3"
     tslib "^2.1.0"
 
-"@firebase/app-check-Interop-types@0.2.0":
+"@firebase/app-check-interop-types@0.2.0":
   version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@firebase/app-check-Interop-types/-/app-check-Interop-types-0.2.0.tgz#9106270114ca4e7732457e8319333866a26285d8"
+  resolved "https://registry.yarnpkg.com/@firebase/app-check-interop-types/-/app-check-interop-types-0.2.0.tgz#9106270114ca4e7732457e8319333866a26285d8"
   integrity sha512-+3PQIeX6/eiVK+x/yg8r6xTNR97fN7MahFDm+jiQmDjcyvSefoGuTTNQuuMScGyx3vYUBeZn+Cp9kC0yY/9uxQ==
 
 "@firebase/app-check-types@0.5.0":
@@ -1328,9 +1328,9 @@
     node-fetch "2.6.7"
     tslib "^2.1.0"
 
-"@firebase/auth-Interop-types@0.2.1":
+"@firebase/auth-interop-types@0.2.1":
   version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@firebase/auth-Interop-types/-/auth-Interop-types-0.2.1.tgz#78884f24fa539e34a06c03612c75f222fcc33742"
+  resolved "https://registry.yarnpkg.com/@firebase/auth-interop-types/-/auth-interop-types-0.2.1.tgz#78884f24fa539e34a06c03612c75f222fcc33742"
   integrity sha512-VOaGzKp65MY6P5FI84TfYKBXEPi6LmOCSMMzys6o2BN2LOsqy7pCuZCup7NYnfbk5OkkQKzvIfHOzTm0UDpkyg==
 
 "@firebase/auth-types@0.12.0":
@@ -1382,7 +1382,7 @@
   resolved "https://registry.yarnpkg.com/@firebase/database/-/database-0.14.4.tgz#9e7435a16a540ddfdeb5d99d45618e6ede179aa6"
   integrity sha512-+Ea/IKGwh42jwdjCyzTmeZeLM3oy1h0mFPsTy6OqCWzcu/KFqRAr5Tt1HRCOBlNOdbh84JPZC47WLU18n2VbxQ==
   dependencies:
-    "@firebase/auth-Interop-types" "0.2.1"
+    "@firebase/auth-interop-types" "0.2.1"
     "@firebase/component" "0.6.4"
     "@firebase/logger" "0.4.0"
     "@firebase/util" "1.9.3"
@@ -1440,10 +1440,10 @@
   resolved "https://registry.yarnpkg.com/@firebase/functions/-/functions-0.9.4.tgz#47232500be6847f1c7d3fa74eb36f621bd01a160"
   integrity sha512-3H2qh6U+q+nepO5Hds+Ddl6J0pS+zisuBLqqQMRBHv9XpWfu0PnDHklNmE8rZ+ccTEXvBj6zjkPfdxt6NisvlQ==
   dependencies:
-    "@firebase/app-check-Interop-types" "0.2.0"
-    "@firebase/auth-Interop-types" "0.2.1"
+    "@firebase/app-check-interop-types" "0.2.0"
+    "@firebase/auth-interop-types" "0.2.1"
     "@firebase/component" "0.6.4"
-    "@firebase/messaging-Interop-types" "0.2.0"
+    "@firebase/messaging-interop-types" "0.2.0"
     "@firebase/util" "1.9.3"
     node-fetch "2.6.7"
     tslib "^2.1.0"
@@ -1491,9 +1491,9 @@
     "@firebase/util" "1.9.3"
     tslib "^2.1.0"
 
-"@firebase/messaging-Interop-types@0.2.0":
+"@firebase/messaging-interop-types@0.2.0":
   version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@firebase/messaging-Interop-types/-/messaging-Interop-types-0.2.0.tgz#6056f8904a696bf0f7fdcf5f2ca8f008e8f6b064"
+  resolved "https://registry.yarnpkg.com/@firebase/messaging-interop-types/-/messaging-interop-types-0.2.0.tgz#6056f8904a696bf0f7fdcf5f2ca8f008e8f6b064"
   integrity sha512-ujA8dcRuVeBixGR9CtegfpU4YmZf3Lt7QYkcj693FFannwNuZgfAYaTmbJ40dtjB81SAu6tbFPL9YLNT15KmOQ==
 
 "@firebase/messaging@0.12.4":
@@ -1503,7 +1503,7 @@
   dependencies:
     "@firebase/component" "0.6.4"
     "@firebase/installations" "0.6.4"
-    "@firebase/messaging-Interop-types" "0.2.0"
+    "@firebase/messaging-interop-types" "0.2.0"
     "@firebase/util" "1.9.3"
     idb "7.0.1"
     tslib "^2.1.0"
@@ -4995,7 +4995,7 @@ postcss-preset-env@^8.2.0:
     "@csstools/postcss-color-function" "^2.1.0"
     "@csstools/postcss-color-mix-function" "^1.0.0"
     "@csstools/postcss-font-format-keywords" "^2.0.2"
-    "@csstools/postcss-gradients-Interpolation-method" "^3.0.1"
+    "@csstools/postcss-gradients-interpolation-method" "^3.0.1"
     "@csstools/postcss-hwb-function" "^2.2.0"
     "@csstools/postcss-ic-unit" "^2.0.2"
     "@csstools/postcss-is-pseudo-class" "^3.1.1"
@@ -5745,7 +5745,7 @@ sucrase@^3.29.0:
     lines-and-columns "^1.1.6"
     mz "^2.7.0"
     pirates "^4.0.1"
-    ts-Interface-checker "^0.1.9"
+    ts-interface-checker "^0.1.9"
 
 supports-color@^5.3.0:
   version "5.5.0"
@@ -5893,9 +5893,9 @@ tr46@~0.0.3:
   resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
   integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
 
-ts-Interface-checker@^0.1.9:
+ts-interface-checker@^0.1.9:
   version "0.1.13"
-  resolved "https://registry.yarnpkg.com/ts-Interface-checker/-/ts-Interface-checker-0.1.13.tgz#784fd3d679722bc103b1b4b8030bcddb5db2a699"
+  resolved "https://registry.yarnpkg.com/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz#784fd3d679722bc103b1b4b8030bcddb5db2a699"
   integrity sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
 
 tsconfig-paths@^3.14.1:
