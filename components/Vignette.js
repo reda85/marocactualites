@@ -16,7 +16,7 @@ export default function Vignette(props) {
     return(
         <div className='flex  flex-col' >
         <div className='flex  flex-row' >
-            <div className='w-full md:w-fit ' >
+            <div className='w-full ' >
         <div className='   my-3' >
             <div className='py-6 font-bold bg-gradient-to-r from-red-600  to-green-400 inline-block text-transparent bg-clip-text  text-3xl'>
             À la Une
@@ -37,7 +37,7 @@ export default function Vignette(props) {
         <div className=' my-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
 
             <div className='flex flex-row md:flex-col'>
-            <div className='relative w-1/2 md:w-full hover:cursor-pointer h-32' >
+            <div className='relative w-1/2 md:w-full hover:cursor-pointer h-28' >
             <Link href={api_base + posts[1].slug}>
            
             <Image 
@@ -56,7 +56,7 @@ export default function Vignette(props) {
            </div>
             </div>
             <div className='flex flex-row md:flex-col'>
-            <div className='relative w-1/2 md:w-full hover:cursor-pointer h-32' >
+            <div className='relative w-1/2 md:w-full hover:cursor-pointer h-28' >
             <Link href={api_base + posts[2].slug}>
            
             <Image 
@@ -81,7 +81,7 @@ export default function Vignette(props) {
      slot="9619846246"></Adsense>
      </div>
      <div className='flex flex-row md:flex-col'>
-            <div className='relative w-1/2 md:w-full hover:cursor-pointer h-32' >
+            <div className='relative w-1/2 md:w-full hover:cursor-pointer h-28' >
             <Link href={api_base + posts[3].slug}>
            
             <Image 
@@ -101,9 +101,9 @@ export default function Vignette(props) {
             </div>
         </div>
         </div>
-        <div className='hidden h-full lg:flex md:flex-col px-12 md:items-center  md:w-96 md:sticky md:top-0'>
+        <div className='hidden h-full lg:flex md:flex-col px-12 md:items-center   md:sticky md:top-0'>
         <Adsense className="adsbygoogle"
-     style={{display:"inline-block",width:"120px",height:"600px"}}
+     style={{display:"inline-block",width:"300px",height:"600px"}}
      client="ca-pub-1131650691837357"
      slot="3352206399"></Adsense>
 
@@ -111,7 +111,7 @@ export default function Vignette(props) {
         </div>
         <div className="my-3 hidden md:flex ">
      <Adsense className="my-3 hidden md:flex "
-     style={{display:'inline-block',width:'800px',height:'250px'}}
+     style={{display:'inline-block',width:'970px',height:'250px'}}
      
      layoutKey="-h7-2g+1-79+wn"
      client="ca-pub-1131650691837357"

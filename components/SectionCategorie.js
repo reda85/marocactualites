@@ -109,7 +109,7 @@ export default function SectionCategorie(props) {
         </div>
        
         </div>
-        <div className=" hidden md:flex ">
+        <div className=" hidden lg:flex ">
      <Adsense className=" hidden md:flex "
      style={{display:'inline-block',width:'970px',height:'250px'}}
      
@@ -121,7 +121,7 @@ export default function SectionCategorie(props) {
 
         <div className="my-3 hidden lg:flex h-full md:w-80 md:flex-col md:items-center md:px-12  md:sticky md:top-0 ">
         <Adsense className="adsbygoogle"
-     style={{display:"inline-block",width:"120px",height:"600px"}}
+     style={{display:"inline-block",width:"300px",height:"600px"}}
      client="ca-pub-1131650691837357"
      slot="3352206399"></Adsense>
 
