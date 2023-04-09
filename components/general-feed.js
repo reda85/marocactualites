@@ -98,13 +98,11 @@ function GeneralFeed ({ posts , ownposts, coviddata, hotposts}) {
      client="ca-pub-1131650691837357"
      slot="9009472157"></Adsense>
      </div>
-     <div className="my-3 md:hidden " >
-        <Adsense 
-     style={{display:'block'}}
-     format="fluid"
-     layoutKey="-hs-s+1c-5f+cv"
+     <div className='flex md:hidden my-3 '>
+                    <Adsense className="adsbygoogle"
+     style={{display:"inline-block",width:"336px",height:"280px"}}
      client="ca-pub-1131650691837357"
-    slot="9669767968"></Adsense>
+     slot="9619846246"></Adsense>
      </div>
         <Vignette posts={ownposts} />
         <SectionCategorie posts={ownposts} category='Sport' color='bg-green-500' />

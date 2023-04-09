@@ -180,7 +180,7 @@ function Ownarticle({ article, lastposts }) {
 })}</Text>
  
                                         </div> 
-										<div className='mt-10 mb-16 text-black font-semibold text-5xl'>{article[0].title}</div>
+										<div className='mt-10 mb-16 text-black font-semibold text-3xl'>{article[0].title}</div>
 <div className='flex md:hidden md:h-72 md:w-full '>
                     <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"336px",height:"280px"}}
