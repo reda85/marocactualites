@@ -101,7 +101,7 @@ export default function Vignette(props) {
             </div>
         </div>
         </div>
-        <div className='hidden h-full md:flex md:flex-col px-12 md:items-center  md:w-96 md:sticky md:top-0'>
+        <div className='hidden h-full xl:flex md:flex-col px-12 md:items-center  md:w-96 md:sticky md:top-0'>
         <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"300px",height:"600px"}}
      client="ca-pub-1131650691837357"
