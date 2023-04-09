@@ -181,7 +181,7 @@ function Ownarticle({ article, lastposts }) {
  
                                         </div> 
 										<div className='mt-10 mb-16 text-black font-semibold text-3xl'>{article[0].title}</div>
-<div className='flex md:hidden md:h-72 md:w-full '>
+<div className='flex my-6 md:hidden md:h-72 md:w-full '>
                     <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"336px",height:"280px"}}
      client="ca-pub-1131650691837357"
@@ -209,7 +209,7 @@ function Ownarticle({ article, lastposts }) {
 									</header>
                                    
 									{article[0].thumbnail ? <div className="relative md:h-96 h-64 aspect-auto"><Image src={article[0].thumbnail} alt="image_article" fill priority /></div> : null}
-                  <div className='flex md:hidden md:h-72 md:w-full '>
+                  <div className='flex my-5 md:hidden md:h-72 md:w-full '>
                     <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"336px",height:"280px"}}
      client="ca-pub-1131650691837357"
@@ -218,7 +218,7 @@ function Ownarticle({ article, lastposts }) {
                   <div className=' underline'  >Par : la Rédaction</div>               
 
 									<div className='mt-8 text-2xl text-black '>{article[0].accroche}</div>
-                  <div className='flex md:hidden md:h-72 md:w-full '>
+                  <div className='flex my-6 md:hidden md:h-72 md:w-full '>
                     <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"336px",height:"280px"}}
      client="ca-pub-1131650691837357"
@@ -307,7 +307,20 @@ function Ownarticle({ article, lastposts }) {
   
   format="auto-relaxed"
 /></div>
-                                    
+
+<div className='hidden md:flex my-6' >
+                                    <Adsense className="adsbygoogle"
+style={{display:'inline-block',width:'970px',height:'400px'}}
+     client="ca-pub-1131650691837357"
+     slot="9479852239"
+     /></div> 
+
+     <div className='md:hidden flex my-6' >
+                                    <Adsense className="adsbygoogle"
+ style={{display:'inline-block',width:'300px',height:'1000px'}}
+ client="ca-pub-1131650691837357"
+ slot="8209673605"
+     /></div>                                    
                                     <LastArticles Lastposts={lastposts}></LastArticles>
       </div>
       <div style={{marginTop : "30px"}} className="col-4 col-12-small">
