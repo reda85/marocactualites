@@ -217,7 +217,7 @@ function Ownarticle({ article, lastposts }) {
      </div>
                   <div className=' underline'  >Par : la Rédaction</div>               
 
-									<div className='mt-8 text-3xl text-black '>{article[0].accroche}</div>
+									<div className='mt-8 text-2xl text-black '>{article[0].accroche}</div>
                   <div className='flex md:hidden md:h-72 md:w-full '>
                     <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"336px",height:"280px"}}
