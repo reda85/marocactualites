@@ -73,13 +73,11 @@ export default function SectionCategorie(props) {
            <div className=' font-semibold hover:cursor-pointer hover:opacity-50 text-black text-base'>{myposts[2].title}</div>
            </Link>
         </div>
-        <div className="my-3 md:hidden " >
-        <Adsense 
-     style={{display:'block'}}
-     format="fluid"
-     layoutKey="-hs-s+1c-5f+cv"
+        <div className='flex md:hidden my-3 '>
+                    <Adsense className="adsbygoogle"
+     style={{display:"inline-block",width:"336px",height:"280px"}}
      client="ca-pub-1131650691837357"
-    slot="9669767968"></Adsense>
+     slot="9619846246"></Adsense>
      </div>
         <div className="grid place-content-start grid-cols-2 md:grid-cols-1">
         <Link href={api_base + myposts[3].slug}>
@@ -129,13 +127,11 @@ export default function SectionCategorie(props) {
 
      </div>
      </div>
-     <div className="my-3 md:hidden " >
-        <Adsense 
-     style={{display:'block'}}
-     format="fluid"
-     layoutKey="-hs-s+1c-5f+cv"
+     <div className='flex md:hidden my-3 '>
+                    <Adsense className="adsbygoogle"
+     style={{display:"inline-block",width:"336px",height:"280px"}}
      client="ca-pub-1131650691837357"
-    slot="9669767968"></Adsense>
+     slot="9619846246"></Adsense>
      </div>
      
         </div>
