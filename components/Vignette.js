@@ -22,7 +22,7 @@ export default function Vignette(props) {
             À la Une
             </div>
             <Link href={api_base + posts[0].slug}>
-            <div className='relative w-full aspect-video hover:cursor-pointer' >
+            <div className='relative w-full h-128 aspect-video hover:cursor-pointer' >
             <Image fill priority
      src={posts[0].thumbnail} alt=""   
            
