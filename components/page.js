@@ -1,5 +1,5 @@
 import Head from 'next/head';
-//import Link from 'next/link';
+import Link from 'next/link';
 import Image from 'next/image'
 import Footer from '../components/footer'
 import {useState} from 'react'
@@ -12,6 +12,7 @@ import { Button, ButtonGroup,Link,Menu, MenuButton, MenuItem, MenuList } from "@
 import { useRouter } from 'next/router';
 import Drawer from 'react-ui-drawer'
 import VerticalMenu from './verticalMenu';
+
 
 
 
@@ -111,11 +112,11 @@ const Page = props => {
         </Drawer>
       )}
               <div className='hidden md:flex flex-row justify-center items-center py-4 font-semibold text-base shadow-sm'>
-                <div className='mx-6 hover:cursor-pointer hover:scale-110 hover:text-orange-500 ' ><a href='/category/politique'>Politique</a></div>
-                <div className='mx-6 hover:cursor-pointer hover:scale-110  hover:text-red-500' ><a href='/category/economie'>Economie</a></div>
-                <div className='mx-6 hover:cursor-pointer hover:scale-110  hover:text-green-500' ><a href='/category/sport'>Sport</a></div>
-                <div className='mx-6 hover:cursor-pointer hover:scale-110  hover:text-blue-500' ><a href='/category/societe'>Société</a></div>
-                <div className='mx-6 hover:cursor-pointer hover:scale-110  hover:text-indigo-500' ><a href='/category/people'>People</a></div>
+                <div className='mx-6 hover:cursor-pointer hover:scale-110 hover:text-orange-500 ' ><Link href='/category/politique'>Politique</Link></div>
+                <div className='mx-6 hover:cursor-pointer hover:scale-110  hover:text-red-500' ><Link href='/category/economie'>Economie</Link></div>
+                <div className='mx-6 hover:cursor-pointer hover:scale-110  hover:text-green-500' ><Link href='/category/sport'>Sport</Link></div>
+                <div className='mx-6 hover:cursor-pointer hover:scale-110  hover:text-blue-500' ><Link href='/category/societe'>Société</Link></div>
+                <div className='mx-6 hover:cursor-pointer hover:scale-110  hover:text-indigo-500' ><Link href='/category/people'>People</Link></div>
               </div>
               {/* Section */}
               {props.children}
