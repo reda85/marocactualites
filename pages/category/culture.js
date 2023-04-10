@@ -38,7 +38,7 @@ export async function getServerSideProps() {
 
   // Select the users collection from the database
   // posts = await db.collection('articles').find({}).toArray()
-   ownposts = await db.collection('ownarticles').find({statut : "valid"}).toArray()
+   ownposts = await db.collection('ownarticles').find({statut : "valid", category:'culture'}).toArray()
 //
 
 //console.log("hnaaaa", posts)
@@ -47,7 +47,7 @@ export async function getServerSideProps() {
 };
 posts = posts.map(post => post.item)
 posts = posts.concat(ownposts)
-posts = posts.filter(item => {return( item.category.includes("culture") || item.category.includes("Culture") || item.category.includes("CULTURE")) })
+//posts = posts.filter(item => {return( item.category.includes("culture") || item.category.includes("Culture") || item.category.includes("CULTURE")) })
     return {
       props : {posts: JSON.parse(JSON.stringify(posts)) 
       }

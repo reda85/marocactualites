@@ -14,7 +14,9 @@ export default function Politique({posts}) {
   return (
     <Page>
       
-      <PostList posts={posts} title="Politique" icon="icon solid fa-handshake" col="mx-2 w-4 h-4 bg-orange-500" isAmp={isAmp}></PostList>
+     {posts? <PostList posts={posts} title="Politique" icon="icon solid fa-handshake" col="mx-2 w-4 h-4 bg-orange-500" isAmp={isAmp}>
+     </PostList> : <div> loading</div>}
+     
     </Page>
   );
 
@@ -24,12 +26,11 @@ export async function getServerSideProps() {
   const client = await clientPromise
     const db = client.db('articles');
    let isConnected = true;
-  var Feed = require('rss-to-json'); 
-  const filtered =  feeds
+ 
   let posts=[]
   let ownposts=[]
-  console.log("imken  here " , filtered )
-    if (filtered.length > 0 && isConnected) {
+
+    if ( isConnected) {
       console.log("imken  here2")
 
       
@@ -38,7 +39,7 @@ export async function getServerSideProps() {
 
   // Select the users collection from the database
   // posts = await db.collection('articles').find({}).toArray()
-   ownposts = await db.collection('ownarticles').find({statut : "valid"}).toArray()
+   ownposts = await db.collection('ownarticles').find({statut : "valid",category:'politique'}).toArray()
 //
 
 //console.log("hnaaaa", posts)
@@ -47,7 +48,7 @@ export async function getServerSideProps() {
 };
 posts = posts.map(post => post.item)
 posts = posts.concat(ownposts)
-posts = posts.filter(item => {return( item.category.includes("politique") || item.category.includes("Politique") || item.category.includes("POLITIQUE")) })
+//posts = posts.filter(item => {return( item.category.includes("politique") || item.category.includes("Politique") || item.category.includes("POLITIQUE")) })
     return {
       props : {posts: JSON.parse(JSON.stringify(posts)) 
       }

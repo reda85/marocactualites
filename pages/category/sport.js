@@ -39,7 +39,7 @@ export async function getServerSideProps() {
 
   // Select the users collection from the database
   // posts = await db.collection('articles').find({}).toArray()
-   ownposts = await db.collection('ownarticles').find({statut : "valid"}).toArray()
+   ownposts = await db.collection('ownarticles').find({statut : "valid", category:'Sport'}).toArray()
 //
 
 //console.log("hnaaaa", posts)
@@ -48,7 +48,7 @@ export async function getServerSideProps() {
 };
 posts = posts.map(post => post.item)
 posts = posts.concat(ownposts)
-posts = posts.filter(item => {return( item.category.includes("sport") || item.category.includes("SPORT") || item.category.includes("Sport") || item.category.includes("football") || item.category.includes("Football") || item.category.includes("FOOTBALL") || item.category.includes("basketball") || item.category.includes("Basketball") || item.category.includes("BASKETBALL") || item.category.includes("Tennis") || item.category.includes("tennis") || item.category.includes("TENNIS")) })
+//posts = posts.filter(item => {return( item.category.includes("sport") || item.category.includes("SPORT") || item.category.includes("Sport") || item.category.includes("football") || item.category.includes("Football") || item.category.includes("FOOTBALL") || item.category.includes("basketball") || item.category.includes("Basketball") || item.category.includes("BASKETBALL") || item.category.includes("Tennis") || item.category.includes("tennis") || item.category.includes("TENNIS")) })
 return {
   props : {posts: JSON.parse(JSON.stringify(posts)) 
     }
