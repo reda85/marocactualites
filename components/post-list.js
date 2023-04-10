@@ -32,7 +32,7 @@ const PostList = ({ posts , title, isAmp, icon, col } ) => {
          
            
              <div className="relative sm:h-32 h-64 aspect-video">
-              <Image src={post.thumbnail} alt="" fill />
+              <Image src={post.thumbnail} alt="" placeholder="empty" fill />
               </div> 
             <div className=" mx-2 flex flex-col sm:flex-row">
             { <Link className="text-gray-800" href={`${api_base}/ownarticles/${post.slug}`} >
