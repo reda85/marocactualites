@@ -208,7 +208,7 @@ function Ownarticle({ article, lastposts }) {
                                         </div>
 									</header>
                                    
-									{article[0].thumbnail ? <div className="relative md:h-128 h-64 aspect-auto"><Image src={article[0].thumbnail} alt="image_article" fill priority /></div> : null}
+									{article[0].thumbnail ? <div className="relative h-128  aspect-video"><Image src={article[0].thumbnail} alt="image_article" fill priority /></div> : null}
                   <div className='flex my-5 md:hidden md:h-72 md:w-full '>
                     <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"336px",height:"280px"}}
