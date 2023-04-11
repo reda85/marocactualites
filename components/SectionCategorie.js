@@ -34,7 +34,7 @@ export default function SectionCategorie(props) {
                 <div className="">
                 <Link href={api_base + myposts[0].slug}>
 <div className='relative hover:cursor-pointer  w-full aspect-video ' >
-            <Image fill priority
+            <Image fill 
      src={myposts[0].thumbnail} alt=""   
      sizes="(max-width: 768px) 100vw,
      (max-width: 1200px) 50vw,
