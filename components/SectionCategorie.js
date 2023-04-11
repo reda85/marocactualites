@@ -36,7 +36,9 @@ export default function SectionCategorie(props) {
 <div className='relative hover:cursor-pointer  w-full aspect-video ' >
             <Image fill priority
      src={myposts[0].thumbnail} alt=""   
-           
+     sizes="(max-width: 768px) 100vw,
+     (max-width: 1200px) 50vw,
+     33vw"    
            />
            </div>
            </Link>
@@ -52,7 +54,9 @@ export default function SectionCategorie(props) {
 <div className='relative hover:cursor-pointer  mr-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[1].thumbnail} alt=""   
-           
+     sizes="(max-width: 768px) 100vw,
+     (max-width: 1200px) 50vw,
+     33vw"     
            />
            </div>
            </Link>
@@ -65,7 +69,9 @@ export default function SectionCategorie(props) {
 <div className='relative hover:cursor-pointer  mr-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[2].thumbnail} alt=""   
-           
+     sizes="(max-width: 768px) 100vw,
+     (max-width: 1200px) 50vw,
+     33vw"      
            />
            </div>
            </Link>
@@ -84,7 +90,9 @@ export default function SectionCategorie(props) {
 <div className='relative hover:cursor-pointer  mr-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[3].thumbnail} alt=""   
-           
+     sizes="(max-width: 768px) 100vw,
+     (max-width: 1200px) 50vw,
+     33vw"      
            />
            </div>
            </Link>
@@ -97,7 +105,9 @@ export default function SectionCategorie(props) {
 <div className='relative hover:cursor-pointer  mr-2 md:w-full aspect-video' >
             <Image fill
      src={myposts[4].thumbnail} alt=""   
-           
+     sizes="(max-width: 768px) 100vw,
+     (max-width: 1200px) 50vw,
+     33vw"      
            />
            </div>
            </Link>

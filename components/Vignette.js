@@ -25,7 +25,9 @@ export default function Vignette(props) {
             <div className='relative w-full h-128 aspect-video hover:cursor-pointer' >
             <Image fill priority
      src={posts[0].thumbnail} alt=""   
-           
+     sizes="(max-width: 768px) 100vw,
+     (max-width: 1200px) 50vw,
+     33vw"    
            />
            </div>
            </Link>
@@ -42,7 +44,9 @@ export default function Vignette(props) {
            
             <Image 
   fill src={posts[1].thumbnail} alt=""   
-           
+  sizes="(max-width: 768px) 100vw,
+  (max-width: 1200px) 50vw,
+  33vw"      
            />
             </Link>
            </div>
@@ -61,7 +65,9 @@ export default function Vignette(props) {
            
             <Image 
   fill src={posts[2].thumbnail} alt=""   
-           
+  sizes="(max-width: 768px) 100vw,
+  (max-width: 1200px) 50vw,
+  33vw"      
            />
             </Link>
            </div>
@@ -86,7 +92,9 @@ export default function Vignette(props) {
            
             <Image 
   fill src={posts[3].thumbnail} alt=""   
-           
+  sizes="(max-width: 768px) 100vw,
+  (max-width: 1200px) 50vw,
+  33vw"    
            />
             </Link>
            </div>
