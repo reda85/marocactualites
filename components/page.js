@@ -25,8 +25,8 @@ const Page = props => {
   const [active, setActive] = useState(false);
   const [opener, setOpener] = useState(true);
   const [deconnexion, setDeconnexion] = useState(false);
-  const isAmp = useAmp()
-  const { user, loading } = useAuth();
+  //const isAmp = useAmp()
+  //const { user, loading } = useAuth();
   const [showDrawer, setShowDrawer] = useState(false)
 
   const handleOpenDrawer = () => {
@@ -72,10 +72,10 @@ const Page = props => {
                 
                  
 
+<div></div>
 
 
-
-
+  {/*   
 
 { user ? <div >
                  <div style={{ display:'flex', flexDirection:'row', alignItems:'center' , justifyContent:'space-between'}}>
@@ -83,7 +83,7 @@ const Page = props => {
                    
                   
                   
-                  <Menu>
+             <Menu>
                     <MenuButton as={Button}  rightIcon={<FaChevronDown />} >{user.displayName}</MenuButton>
                     <MenuList>
                       <MenuItem  icon={<FaUserCircle />} onClick={async () => {window.location.href = `${api_base}/Profile` ;
@@ -99,10 +99,11 @@ const Page = props => {
       }} icon={<FaSignOutAlt />}> Deconnexion</MenuItem>
                     </MenuList>
                   </Menu>
+  
                   </div>
                  </div>
                   : null }
-                 
+          */}         
                 
               </header>
               {/* Banner */}
