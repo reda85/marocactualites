@@ -1,9 +1,6 @@
 
 import { useAmp } from 'next/amp'
-import {formatDistance, formatDistanceToNow} from 'date-fns'
-import { fr } from 'date-fns/locale'
-import Link from 'next/link'
-import Image from 'next/image'
+
 import Vignette from './Vignette'
 import SectionCategorie from './SectionCategorie'
 import { Adsense } from '@ctrl/react-adsense'

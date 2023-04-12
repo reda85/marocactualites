@@ -39,7 +39,7 @@ export default function Vignette(props) {
         <div className=' my-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
 
             <div className='flex flex-row md:flex-col'>
-            <div className='relative w-1/2 md:w-full aspect-video hover:cursor-pointer h-28 md:h-36' >
+            <div className='relative w-1/2 md:w-full aspect-video hover:cursor-pointer h-28 md:h-48' >
             <Link href={api_base + posts[1].slug}>
            
             <Image 
@@ -60,7 +60,7 @@ export default function Vignette(props) {
            </div>
             </div>
             <div className='flex flex-row md:flex-col'>
-            <div className='relative w-1/2 md:w-full aspect-video hover:cursor-pointer h-28 md:h-36' >
+            <div className='relative w-1/2 md:w-full aspect-video hover:cursor-pointer h-28 md:h-48' >
             <Link href={api_base + posts[2].slug}>
            
             <Image 
@@ -87,7 +87,7 @@ export default function Vignette(props) {
      slot="9619846246"></Adsense>
      </div>
      <div className='flex flex-row md:flex-col'>
-            <div className='relative w-1/2 md:w-full aspect-video hover:cursor-pointer h-28 md:h-36' >
+            <div className='relative w-1/2 md:w-full aspect-video hover:cursor-pointer h-28 md:h-48' >
             <Link href={api_base + posts[3].slug}>
            
             <Image 

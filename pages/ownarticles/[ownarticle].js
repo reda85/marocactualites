@@ -1,11 +1,10 @@
-import fetch from 'isomorphic-unfetch';
-import Error from '../_error';
+
 import { Icon } from "@chakra-ui/react"
 
-import { ArticleJsonLd, NewsArticleJsonLd, NextSeo } from 'next-seo'
+import {  NewsArticleJsonLd, NextSeo } from 'next-seo'
 import Page from '../../components/page';
 import LastArticles from '../../components/lastArticles';
-import { useAmp } from 'next/amp'
+
 import parse from 'html-react-parser';
 import { useState, useRef} from 'react'
 

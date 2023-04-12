@@ -3,12 +3,9 @@ import Link from 'next/link';
 import Image from 'next/image'
 import Footer from '../components/footer'
 import {useState} from 'react'
-import { useAmp } from 'next/amp'
-import { useAuth } from '../auth';
-import { firebaseClient } from "../firebaseClient";
-import { Icon } from "@chakra-ui/react"
-import { FaBars, FaChevronDown, FaEdit, FaSignInAlt, FaSignOutAlt, FaUserCircle} from "react-icons/fa"
-import { Button, ButtonGroup,Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react"
+
+import { FaBars} from "react-icons/fa"
+
 import { useRouter } from 'next/router';
 import Drawer from 'react-ui-drawer'
 import VerticalMenu from './verticalMenu';

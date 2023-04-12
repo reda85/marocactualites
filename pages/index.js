@@ -1,8 +1,8 @@
 import feeds from '../data/feeds';
 import Page from '../components/page';
-import FeedList from '../components/feed-list';
+
 import GeneralFeed from '../components/general-feed';
-import striptags from 'striptags';
+
 import clientPromise from '../util/mongodb'
 
 

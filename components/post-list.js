@@ -1,4 +1,4 @@
-import striptags from "striptags";
+
 import Image from "next/image";
 import Link from "next/link";
 
