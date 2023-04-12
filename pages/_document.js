@@ -26,14 +26,16 @@ export default class MyDocument extends Document {
 </script>
 <script src="https://cdn.appconsent.io/loader-clear.js" defer async></script>
     */}    
-        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></Script>
+        <Script id='ads' async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></Script>
 
 
         <Script
+        id='gtag'
                   async
                   src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
                 />
                 <Script
+                id='analytics'
                   dangerouslySetInnerHTML={{
                     __html: `
                       window.dataLayer = window.dataLayer || [];
