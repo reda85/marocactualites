@@ -26,7 +26,7 @@ export default class MyDocument extends Document {
 </script>
 <script src="https://cdn.appconsent.io/loader-clear.js" defer async></script>
     */}    
-        <Script id='ads' async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></Script>
+        <Script id='ads' strategy="afterInteractive" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></Script>
 
 
         <Script
