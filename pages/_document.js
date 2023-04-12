@@ -1,9 +1,9 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { useAmp } from 'next/amp'
-
+import Script from 'next/script'
 import Script from 'next/script'
 import { GA_TRACKING_ID , DATA_CA_ID} from '../lib/gtag'
-
+import { Adsense } from '@ctrl/react-adsense'
 
 
 function AmpWrap({ ampOnly, nonAmp }) {
@@ -26,16 +26,14 @@ export default class MyDocument extends Document {
 </script>
 <script src="https://cdn.appconsent.io/loader-clear.js" defer async></script>
     */}    
-        <Script id='ads' strategy="afterInteractive" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></Script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 
-        <Script
-        id='gtag'
+        <script
                   async
                   src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
                 />
-                <Script
-                id='analytics'
+                <script
                   dangerouslySetInnerHTML={{
                     __html: `
                       window.dataLayer = window.dataLayer || [];
