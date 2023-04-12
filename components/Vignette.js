@@ -9,7 +9,7 @@ export default function Vignette(props) {
     const {posts} = props
     const {router} = useRouter()
     function cat(index,posts) {
-        return  'mx-2 md:mx-0 md:my-2 font-bold   ' + colors[categories.indexOf(posts[index].category)] 
+        return  'mx-2 lg:mx-0 lg:my-2 font-bold   ' + colors[categories.indexOf(posts[index].category)] 
     }
     const api_base = process.env.NODE_ENV == 'production' ? 'https://marocactualites.com/ownarticles/' : 'http://localhost:3000/ownarticles/';
    // console.log("api_base", api_base + posts[0].slug)
@@ -36,10 +36,10 @@ export default function Vignette(props) {
            </Link>
         </div>
          
-        <div className=' my-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
+        <div className=' my-12 grid grid-cols-1 lg:grid-cols-3 gap-8'>
 
-            <div className='flex flex-row md:flex-col'>
-            <div className='relative w-1/2 md:w-full aspect-video hover:cursor-pointer h-28 md:h-48' >
+            <div className='flex flex-row lg:flex-col'>
+            <div className='relative w-1/2 lg:w-full aspect-video hover:cursor-pointer h-28 lg:h-48' >
             <Link href={api_base + posts[1].slug}>
            
             <Image 
@@ -51,16 +51,16 @@ export default function Vignette(props) {
             </Link>
            </div>
           
-           <div className='w-1/2 md:w-full flex flex-col'> 
+           <div className='w-1/2 lg:w-full flex flex-col'> 
            <div className={cat(1,posts)}>{posts[1].category.toUpperCase()}</div>
            <Link href={api_base + posts[1].slug}>
            
-           <div className='md:my-2 mx-2 md:mx-0  hover:cursor-pointer hover:opacity-50 font-semibold text-black text-base md:text-lg'>{posts[1].title}</div>
+           <div className='lg:my-2 mx-2 lg:mx-0  hover:cursor-pointer hover:opacity-50 font-semibold text-black text-base lg:text-lg'>{posts[1].title}</div>
            </Link>
            </div>
             </div>
-            <div className='flex flex-row md:flex-col'>
-            <div className='relative w-1/2 md:w-full aspect-video hover:cursor-pointer h-28 md:h-48' >
+            <div className='flex flex-row lg:flex-col'>
+            <div className='relative w-1/2 lg:w-full aspect-video hover:cursor-pointer h-28 lg:h-48' >
             <Link href={api_base + posts[2].slug}>
            
             <Image 
@@ -72,22 +72,22 @@ export default function Vignette(props) {
             </Link>
            </div>
           
-           <div className='w-1/2 md:w-full flex flex-col'> 
+           <div className='w-1/2 lg:w-full flex flex-col'> 
            <div className={cat(2,posts)}>{posts[2].category.toUpperCase()}</div>
            <Link href={api_base + posts[2].slug}>
            
-           <div className='md:my-2 mx-2 md:mx-0  hover:cursor-pointer hover:opacity-50 font-semibold text-black text-base md:text-lg'>{posts[2].title}</div>
+           <div className='lg:my-2 mx-2 lg:mx-0  hover:cursor-pointer hover:opacity-50 font-semibold text-black text-base lg:text-lg'>{posts[2].title}</div>
            </Link>
            </div>
             </div>
-            <div className='flex md:hidden my-3 '>
+            <div className='flex lg:hidden my-3 '>
                     <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"336px",height:"280px"}}
      client="ca-pub-1131650691837357"
      slot="9619846246"></Adsense>
      </div>
-     <div className='flex flex-row md:flex-col'>
-            <div className='relative w-1/2 md:w-full aspect-video hover:cursor-pointer h-28 md:h-48' >
+     <div className='flex flex-row lg:flex-col'>
+            <div className='relative w-1/2 lg:w-full aspect-video hover:cursor-pointer h-28 lg:h-48' >
             <Link href={api_base + posts[3].slug}>
            
             <Image 
@@ -99,17 +99,17 @@ export default function Vignette(props) {
             </Link>
            </div>
           
-           <div className='w-1/2 md:w-full flex flex-col'> 
+           <div className='w-1/2 lg:w-full flex flex-col'> 
            <div className={cat(3,posts)}>{posts[3].category.toUpperCase()}</div>
            <Link href={api_base + posts[3].slug}>
            
-           <div className='md:my-2 mx-2 md:mx-0  hover:cursor-pointer hover:opacity-50 font-semibold text-black text-base md:text-lg'>{posts[3].title}</div>
+           <div className='lg:my-2 mx-2 lg:mx-0  hover:cursor-pointer hover:opacity-50 font-semibold text-black text-base lg:text-lg'>{posts[3].title}</div>
            </Link>
            </div>
             </div>
         </div>
         </div>
-        <div className='hidden h-full lg:flex md:flex-col px-12 md:items-center   md:sticky md:top-0'>
+        <div className='hidden h-full lg:flex lg:flex-col px-12 lg:items-center   lg:sticky lg:top-0'>
         <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"300px",height:"600px"}}
      client="ca-pub-1131650691837357"
@@ -117,15 +117,15 @@ export default function Vignette(props) {
 
         </div>
         </div>
-        <div className="my-3 hidden md:flex ">
-     <Adsense className="my-3 hidden md:flex "
+        <div className="my-3 hidden lg:flex ">
+     <Adsense className="my-3 hidden lg:flex "
      style={{display:'inline-block',width:'970px',height:'250px'}}
      
      layoutKey="-h7-2g+1-79+wn"
      client="ca-pub-1131650691837357"
      slot="9009472157"></Adsense>
      </div>
-     <div className='flex md:hidden my-3 '>
+     <div className='flex lg:hidden my-3 '>
                     <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"336px",height:"280px"}}
      client="ca-pub-1131650691837357"

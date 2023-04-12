@@ -84,18 +84,18 @@ function GeneralFeed ({ posts , ownposts, coviddata, hotposts}) {
 
 
 
-            <div className="flex flex-row xl:px-36 items-center justify-center">
+            <div className="flex flex-row xl:px-32  ">
   <div className='flex flex-col' >
 
-  <div className=" hidden md:flex ">
-     <Adsense className=" hidden md:flex "
+  <div className=" hidden lg:flex ">
+     <Adsense className=" hidden lg:flex "
      style={{display:'inline-block',width:'970px',height:'250px'}}
      
      layoutKey="-h7-2g+1-79+wn"
      client="ca-pub-1131650691837357"
      slot="9009472157"></Adsense>
      </div>
-     <div className='flex md:hidden my-3 '>
+     <div className='flex lg:hidden my-3 '>
                     <Adsense className="adsbygoogle"
      style={{display:"inline-block",width:"336px",height:"280px"}}
      client="ca-pub-1131650691837357"
