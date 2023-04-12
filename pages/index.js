@@ -49,7 +49,7 @@ export async function getStaticProps() {
   const now = new Date().getTime()
   console.log('noooooooow', now)
    //posts = await db.collection('articles').find({"item.created" : { $gt: now - 86400000 } }).toArray()
-   ownposts = await db.collection('ownarticles').find({statut : 'valid'}).sort({created : -1}).toArray()
+   ownposts = await db.collection('ownarticles').find({statut : 'valid'}).limit(90).sort({created : -1}).toArray()
 //
 //hotposts = await db.collection('ownarticles').find({statut : 'valid'}).sort( { reads: -1 } ).toArray()
 //console.log("hnaaaa", hotposts)
