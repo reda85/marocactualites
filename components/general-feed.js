@@ -84,7 +84,7 @@ function GeneralFeed ({ posts , ownposts, coviddata, hotposts}) {
 
 
 
-            <div className="flex flex-row xl:px-32  ">
+            <div className="flex flex-row items-center justify-center  ">
   <div className='flex flex-col' >
 
   <div className=" hidden lg:flex ">
