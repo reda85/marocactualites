@@ -181,8 +181,7 @@ function Ownarticle({ article, lastposts }) {
                                         </div> 
 										<div className='mt-10 mb-16 text-black font-semibold text-3xl'>{article[0].title}</div>
 <div className='flex my-6 md:hidden md:h-72 md:w-full '>
-                    <Adsense className="adsbygoogle"
-     style={{display:"inline-block",width:"336px",height:"280px"}}
+                    <Adsense className="adsbygoogle" responsive='true'
      client="ca-pub-1131650691837357"
      slot="9619846246"></Adsense>
      </div>
@@ -210,7 +209,7 @@ function Ownarticle({ article, lastposts }) {
 									{article[0].thumbnail ? <div className="relative h-128  aspect-video"><Image src={article[0].thumbnail} alt="image_article" fill priority /></div> : null}
                   <div className='flex my-5 md:hidden md:h-72 md:w-full '>
                     <Adsense className="adsbygoogle"
-     style={{display:"inline-block",width:"336px",height:"280px"}}
+     responsive='true'
      client="ca-pub-1131650691837357"
      slot="9619846246"></Adsense>
      </div>
@@ -219,7 +218,7 @@ function Ownarticle({ article, lastposts }) {
 									<div className='mt-8 text-2xl text-black '>{article[0].accroche}</div>
                   <div className='flex my-6 md:hidden md:h-72 md:w-full '>
                     <Adsense className="adsbygoogle"
-     style={{display:"inline-block",width:"336px",height:"280px"}}
+      responsive='true'
      client="ca-pub-1131650691837357"
      slot="9619846246"></Adsense>
      </div>
@@ -309,14 +308,14 @@ function Ownarticle({ article, lastposts }) {
 
 <div className='hidden md:flex my-6' >
                                     <Adsense className="adsbygoogle"
-style={{display:'inline-block',width:'970px',height:'400px'}}
+ responsive='true'
      client="ca-pub-1131650691837357"
      slot="9479852239"
      /></div> 
 
      <div className='md:hidden flex my-6' >
                                     <Adsense className="adsbygoogle"
- style={{display:'inline-block',width:'300px',height:'1000px'}}
+ responsive='true'
  client="ca-pub-1131650691837357"
  slot="8209673605"
      /></div>                                    
@@ -325,7 +324,7 @@ style={{display:'inline-block',width:'970px',height:'400px'}}
       <div style={{marginTop : "30px"}} className="col-4 col-12-small">
       <div className='hidden md:flex md:flex-col px-4  md:w-96 md:sticky md:top-0'>
         <Adsense className="adsbygoogle"
-     style={{display:"inline-block",width:"300px",height:"600px"}}
+   responsive='true'
      client="ca-pub-1131650691837357"
      slot="3352206399"></Adsense>
 

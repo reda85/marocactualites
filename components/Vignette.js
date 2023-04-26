@@ -82,7 +82,7 @@ export default function Vignette(props) {
             </div>
             <div className='flex lg:hidden my-3 '>
                     <Adsense className="adsbygoogle"
-     style={{display:"inline-block",width:"336px",height:"280px"}}
+     responsive='true'
      client="ca-pub-1131650691837357"
      slot="9619846246"></Adsense>
      </div>
@@ -111,7 +111,7 @@ export default function Vignette(props) {
         </div>
         <div className='hidden h-full lg:flex lg:flex-col px-12 lg:items-center   lg:sticky lg:top-0'>
         <Adsense className="adsbygoogle"
-     style={{display:"inline-block",width:"300px",height:"600px"}}
+      responsive='true'
      client="ca-pub-1131650691837357"
      slot="3352206399"></Adsense>
 
@@ -119,7 +119,7 @@ export default function Vignette(props) {
         </div>
         <div className="my-3 hidden lg:flex ">
      <Adsense className="my-3 hidden lg:flex "
-     style={{display:'inline-block',width:'970px',height:'250px'}}
+   responsive='true'
      
      layoutKey="-h7-2g+1-79+wn"
      client="ca-pub-1131650691837357"
@@ -127,7 +127,7 @@ export default function Vignette(props) {
      </div>
      <div className='flex lg:hidden my-3 '>
                     <Adsense className="adsbygoogle"
-     style={{display:"inline-block",width:"336px",height:"280px"}}
+    responsive='true'
      client="ca-pub-1131650691837357"
      slot="9619846246"></Adsense>
      </div>

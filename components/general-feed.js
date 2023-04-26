@@ -89,7 +89,7 @@ function GeneralFeed ({ posts , ownposts, coviddata, hotposts}) {
 
   <div className=" hidden lg:flex ">
      <Adsense className=" hidden lg:flex "
-     style={{display:'inline-block',width:'970px',height:'250px'}}
+     responsive='true'
      
      layoutKey="-h7-2g+1-79+wn"
      client="ca-pub-1131650691837357"
@@ -97,7 +97,7 @@ function GeneralFeed ({ posts , ownposts, coviddata, hotposts}) {
      </div>
      <div className='flex lg:hidden my-3 '>
                     <Adsense className="adsbygoogle"
-     style={{display:"inline-block",width:"336px",height:"280px"}}
+     responsive='true'
      client="ca-pub-1131650691837357"
      slot="9619846246"></Adsense>
      </div>
