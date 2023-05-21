@@ -3,8 +3,7 @@
 import React, { Component } from 'react'
 import {format} from 'date-fns'
 import {fr} from 'date-fns/locale'
-import {Icon} from'@chakra-ui/react'
-import {FaMosque} from 'react-icons/fa'
+
 export default class Prayer extends Component {
   constructor(props) {
     super(props)
