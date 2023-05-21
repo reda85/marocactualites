@@ -119,7 +119,7 @@ export default function SectionCategorie(props) {
         </div>
        
         </div>
-        <div className=" hidden lg:flex ">
+        <div className=" hidden md:flex ">
      <Adsense className=" hidden md:flex "
       responsive='true'
      
@@ -129,7 +129,7 @@ export default function SectionCategorie(props) {
      </div>
      </div>
 
-        <div className="my-3 hidden lg:flex h-full md:w-80 md:flex-col md:items-center md:px-12  md:sticky md:top-0 ">
+        <div className="my-3 hidden md:flex h-full md:w-80 md:flex-col md:items-center md:px-12  md:sticky md:top-0 ">
         <Adsense className="adsbygoogle"
       responsive='true'
      client="ca-pub-1131650691837357"

@@ -87,8 +87,8 @@ function GeneralFeed ({ posts , ownposts, coviddata, hotposts}) {
             <div className="flex flex-row items-center justify-center  ">
   <div className='flex flex-col' >
 
-  <div className=" hidden lg:flex ">
-     <Adsense className=" hidden lg:flex "
+  <div className=" hidden md:flex ">
+     <Adsense className=" hidden md:flex "
      responsive='true'
      
      layoutKey="-h7-2g+1-79+wn"

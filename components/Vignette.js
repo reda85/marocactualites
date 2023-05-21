@@ -38,7 +38,7 @@ export default function Vignette(props) {
          
         <div className=' my-12 grid grid-cols-1 lg:grid-cols-3 gap-8'>
 
-            <div className='flex flex-row lg:flex-col'>
+            <div className='flex flex-row md:flex-col'>
             <div className='relative w-1/2 lg:w-full aspect-video hover:cursor-pointer h-28 lg:h-48' >
             <Link href={api_base + posts[1].slug}>
            
@@ -59,7 +59,7 @@ export default function Vignette(props) {
            </Link>
            </div>
             </div>
-            <div className='flex flex-row lg:flex-col'>
+            <div className='flex flex-row md:flex-col'>
             <div className='relative w-1/2 lg:w-full aspect-video hover:cursor-pointer h-28 lg:h-48' >
             <Link href={api_base + posts[2].slug}>
            
@@ -86,7 +86,7 @@ export default function Vignette(props) {
      client="ca-pub-1131650691837357"
      slot="9619846246"></Adsense>
      </div>
-     <div className='flex flex-row lg:flex-col'>
+     <div className='flex flex-row md:flex-col'>
             <div className='relative w-1/2 lg:w-full aspect-video hover:cursor-pointer h-28 lg:h-48' >
             <Link href={api_base + posts[3].slug}>
            
@@ -109,7 +109,7 @@ export default function Vignette(props) {
             </div>
         </div>
         </div>
-        <div className='hidden h-full lg:flex lg:flex-col px-12 lg:items-center   lg:sticky lg:top-0'>
+        <div className='hidden h-full md:flex md:flex-col px-12 lg:items-center   lg:sticky lg:top-0'>
         <Adsense className="adsbygoogle"
       responsive='true'
      client="ca-pub-1131650691837357"
@@ -117,8 +117,8 @@ export default function Vignette(props) {
 
         </div>
         </div>
-        <div className="my-3 hidden lg:flex ">
-     <Adsense className="my-3 hidden lg:flex "
+        <div className="my-3 hidden md:flex ">
+     <Adsense className="my-3 hidden md:flex "
    responsive='true'
      
      layoutKey="-h7-2g+1-79+wn"
