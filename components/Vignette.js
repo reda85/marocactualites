@@ -110,10 +110,13 @@ export default function Vignette(props) {
         </div>
         </div>
         <div className='hidden h-full md:flex md:flex-col px-12 lg:items-center   lg:sticky lg:top-0'>
-        <Adsense className="adsbygoogle"
-      responsive='true'
-     client="ca-pub-1131650691837357"
-     slot="3352206399"></Adsense>
+        <Adsense className="text-center  my-3"
+  client="ca-pub-1131650691837357"
+  slot="6027117993"
+  style={{ display: 'block', width:'300px' }}
+  
+  format="auto-relaxed"
+/>
 
         </div>
         </div>
