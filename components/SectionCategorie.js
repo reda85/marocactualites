@@ -133,7 +133,7 @@ export default function SectionCategorie(props) {
         <Adsense className="text-center  my-3"
   client="ca-pub-1131650691837357"
   slot="6027117993"
-  style={{ display: 'block', width:'300px' }}
+  style={{ display: 'block', width:'300px', height:'600px' }}
   
   format="auto-relaxed"
 />
