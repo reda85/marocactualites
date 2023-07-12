@@ -53,7 +53,7 @@ export async function getStaticProps() {
   const now = new Date().getTime()
   console.log('noooooooow', now)
    //posts = await db.collection('articles').find({"item.created" : { $gt: now - 86400000 } }).toArray()
-   politiqueposts = await db.collection('ownarticles').find({statut : 'valid',category:'politique'}).sort({created : -1}).limit(5).toArray()
+  // politiqueposts = await db.collection('ownarticles').find({statut : 'valid',category:'politique'}).sort({created : -1}).limit(5).toArray()
    economieposts = await db.collection('ownarticles').find({statut : 'valid',category:'économie'}).sort({created : -1}).limit(5).toArray()
    sportposts = await db.collection('ownarticles').find({statut : 'valid',category:'Sport'}).sort({created : -1}).limit(5).toArray()
    peopleposts = await db.collection('ownarticles').find({statut : 'valid',category:'people'}).sort({created : -1}).limit(5).toArray()

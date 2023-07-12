@@ -110,7 +110,7 @@ const Page = props => {
         </Drawer>
       )}
               <div className='hidden md:flex flex-row justify-center items-center py-4 font-semibold text-base shadow-sm'>
-                <div className='mx-6 hover:cursor-pointer hover:scale-110 hover:text-orange-500 ' ><Link href='/category/politique'>Politique</Link></div>
+              {/*  <div className='mx-6 hover:cursor-pointer hover:scale-110 hover:text-orange-500 ' ><Link href='/category/politique'>Politique</Link></div> */}
                 <div className='mx-6 hover:cursor-pointer hover:scale-110  hover:text-red-500' ><Link href='/category/economie'>Economie</Link></div>
                 <div className='mx-6 hover:cursor-pointer hover:scale-110  hover:text-green-500' ><Link href='/category/sport'>Sport</Link></div>
                 <div className='mx-6 hover:cursor-pointer hover:scale-110  hover:text-blue-500' ><Link href='/category/societe'>Société</Link></div>

@@ -103,7 +103,7 @@ function GeneralFeed ({ posts , ownposts, coviddata, hotposts}) {
      </div>
         <Vignette posts={ownposts} />
         <SectionCategorie posts={ownposts} category='Sport' color='bg-green-500' />
-        <SectionCategorie posts={ownposts} category='politique' color='bg-orange-500' />
+       {/* <SectionCategorie posts={ownposts} category='politique' color='bg-orange-500' /> */}
         <SectionCategorie posts={ownposts} category='société' color='bg-blue-500' />
         <SectionCategorie posts={ownposts} category='économie' color='bg-red-500' />
         <SectionCategorie posts={ownposts} category='people' color='bg-indigo-500' />
